@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../index.js" defer></script>
+    <title>Корзина</title>
+</head>
+
+<body>
+    <main>
+        <div class="relative">
+            <div class="w-full h-screen">
+                <img class="w-full h-full" src="../images/testing-bg.jpg" alt="test">
+            </div>
+            <div class="absolute top-0 right-0 w-[400px] bg-white h-screen">
+                <div class="flex h-full flex-col justify-between">
+                    <div>
+                        <div class="border-b border-[#00000033] p-6">
+                            <div class="flex justify-between items-center">
+                                <h2 class="font-bold text-[#222222] text-xl leading-6 uppercase">Корзина</h2>
+                                <div class="text-[#222222] flex gap-x-2 items-center cursor-pointer opacity-90">
+                                    <p class="text-[0.813rem] uppercase font-bold leading-[0.975rem]">Закрыть</p>
+                                    <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.8322 1.73735C11.0012 1.56844 11.0093 1.30272 10.8504 1.14385C10.6916 0.984986 10.4259 0.993133 10.2569 1.16205L6.01236 5.40663L1.69303 1.08729C1.52411 0.918378 1.25839 0.91023 1.09952 1.0691C0.940658 1.22796 0.948805 1.49368 1.11772 1.6626L5.43706 5.98194L1.08143 10.3376C0.912518 10.5065 0.904371 10.7722 1.06324 10.9311C1.2221 11.0899 1.48782 11.0818 1.65674 10.9129L6.01236 6.55724L10.2932 10.8381C10.4621 11.007 10.7279 11.0152 10.8867 10.8563C11.0456 10.6974 11.0374 10.4317 10.8685 10.2628L6.58766 5.98194L10.8322 1.73735Z"
+                                            fill="#222222" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="flex justify-between items-center py-6 border-b border-[#00000033]">
+                                <div class="flex items-center gap-x-4">
+                                    <div>
+                                        <p class="text-[#275C8F] font-bold leading-[1.2rem]">
+                                            1
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col gap-y-3 text-[#222222]">
+                                        <p class="uppercase text-lg leading-[1.35rem]">Терапия идентичности</p>
+                                        <div class="flex gap-x-2">
+                                            <span class="leading-[1.2rem] text-gray-400">1 x</span>
+                                            <p class="leading-[1.2rem] font-bold">1,500 руб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer hover:opacity-90">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7306 1.70253C17 1.43317 17.013 1.00944 16.7597 0.756105C16.5063 0.50277 16.0826 0.515763 15.8132 0.785125L9.04463 7.55374L2.15681 0.665916C1.88745 0.396554 1.46372 0.383561 1.21039 0.636897C0.957051 0.890232 0.970043 1.31396 1.23941 1.58333L8.12722 8.47115L1.18154 15.4168C0.912179 15.6862 0.899186 16.1099 1.15252 16.3633C1.40586 16.6166 1.82959 16.6036 2.09895 16.3342L9.04463 9.38855L15.8711 16.215C16.1405 16.4844 16.5642 16.4974 16.8175 16.2441C17.0709 15.9907 17.0579 15.567 16.7885 15.2976L9.96204 8.47115L16.7306 1.70253Z"
+                                            fill="#222222" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6">
+                            <div class="flex justify-between items-center py-6 border-b border-[#00000033]">
+                                <div class="flex items-center gap-x-4">
+                                    <div>
+                                        <p class="text-[#275C8F] font-bold leading-[1.2rem]">
+                                            2
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col gap-y-3 text-[#222222]">
+                                        <p class="uppercase text-lg leading-[1.35rem]">Терапия идентичности</p>
+                                        <div class="flex gap-x-2">
+                                            <span class="leading-[1.2rem] text-gray-400">2 x</span>
+                                            <p class="leading-[1.2rem] font-bold">3,000 руб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer hover:opacity-90">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7306 1.70253C17 1.43317 17.013 1.00944 16.7597 0.756105C16.5063 0.50277 16.0826 0.515763 15.8132 0.785125L9.04463 7.55374L2.15681 0.665916C1.88745 0.396554 1.46372 0.383561 1.21039 0.636897C0.957051 0.890232 0.970043 1.31396 1.23941 1.58333L8.12722 8.47115L1.18154 15.4168C0.912179 15.6862 0.899186 16.1099 1.15252 16.3633C1.40586 16.6166 1.82959 16.6036 2.09895 16.3342L9.04463 9.38855L15.8711 16.215C16.1405 16.4844 16.5642 16.4974 16.8175 16.2441C17.0709 15.9907 17.0579 15.567 16.7885 15.2976L9.96204 8.47115L16.7306 1.70253Z"
+                                            fill="#222222" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 text-[#222222]">
+                        <div class="border-t border-[#00000033]">
+                            <div class="py-4 text-xl font-bold flex justify-between items-center">
+                                <p class="leading-6 uppercase">Сумма заказа:</p>
+                                <span class="leading-6">1,500 руб.</span>
+                            </div>
+                            <div class="py-4">
+                                <button class="btn w-full">
+                                    Оформление заказа
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

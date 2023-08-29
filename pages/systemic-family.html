@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="../index.js" defer></script>
+    <script src="../js/systemic-family.js" defer></script>
+    <title>Системные семейные расстановки</title>
+</head>
+
+<body>
+    <header class="fixed w-full bg-white z-50 lg:h-auto lg:relative">
+        <div class="container pb-2 lg:pb-4 pt-2">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-2 lg:mt-6 items-center lg:items-start">
+                    <a href="/" class="lg:mt-6 lg:mr-2.5">
+                        <img src="../images/logo.jpg" class="w-[100px] md:w-[120px] lg:w-[160px]" alt="SVG" />
+                    </a>
+                    <div class="max-w-[206px] lg:max-w-[400px] lg:mb-1">
+                        <p
+                            class="lg:py-2 font-medium uppercase text-[#2B5F93] text-[12px] leading-[14px] md:text-xs lg:text-lg lg:leading-[20px]">
+                            Санкт-Петербургский Институт
+                            Системной Травматерапии
+                        </p>
+                        <a href="/"
+                            class="text-link lg:mt-0 leading-[10px] hover:text-[#95C1E4] font-sans text-[8px] lg:text-xs underline">
+                            Образовательная лицензия от 23.03.2021 №4388
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col justify-center items-end font-sans gap-y-2">
+                    <div class="flex items-center gap-x-8">
+                        <div class="flex gap-x-2.5 text-[#2B5F93]">
+                            <a target="_blank" href="https://vk.com/istok_spb?ysclid=lkwktxyqi6679740862"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2842 30.5 30 23.7842 30 15.5C30 7.2158 23.2842 0.5 15 0.5C6.7158 0.5 0 7.2158 0 15.5C0 23.7842 6.7158 30.5 15 30.5ZM7.5 10.7C7.6218 16.5464 10.545 20.06 15.6699 20.06H15.9603V16.715C17.8437 16.9025 19.2675 18.2798 19.8393 20.06H22.5C21.7692 17.399 19.8486 15.9281 18.6492 15.3659C19.8486 14.6726 21.5349 12.986 21.9378 10.7H19.5204C18.9957 12.5552 17.4408 14.2415 15.9603 14.4008V10.7H13.5432V17.1833C12.0441 16.8086 10.1514 14.9912 10.0668 10.7H7.5Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a target="_blank" href="https://t.me/istokspb"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2842 30.5 30 23.7842 30 15.5C30 7.2158 23.2842 0.5 15 0.5C6.7158 0.5 0 7.2158 0 15.5C0 23.7842 6.7158 30.5 15 30.5ZM21.5931 10.0832C21.7089 8.7692 20.3211 9.3104 20.3211 9.3104C19.2966 9.7346 18.24 10.1654 17.172 10.601C13.86 11.9519 10.4388 13.3475 7.5243 14.7212C5.9439 15.3008 6.8691 15.8804 6.8691 15.8804L9.3744 16.6535C10.5309 17.0015 11.1474 16.6148 11.1474 16.6148L16.5438 12.9434C18.471 11.6294 18.0084 12.7115 17.5458 13.1753L13.4988 17.0399C12.882 17.5811 13.1904 18.0449 13.4601 18.2768C14.2251 18.9515 16.1061 20.186 16.9272 20.7248C17.1408 20.8649 17.2827 20.9582 17.3148 20.9822C17.5074 21.1367 18.5481 21.8324 19.242 21.6779C19.9359 21.5231 20.013 20.6342 20.013 20.6342L20.9379 14.5664C21.0765 13.5131 21.2358 12.5006 21.363 11.6918C21.483 10.928 21.5745 10.3463 21.5931 10.0832Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a target="_blank" href="https://wa.me/79522000007"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2843 30.5 30 23.7843 30 15.5C30 7.21574 23.2843 0.5 15 0.5C6.71574 0.5 0 7.21574 0 15.5C0 23.7843 6.71574 30.5 15 30.5ZM20.9288 9.19784C19.3852 7.6523 17.3322 6.80081 15.145 6.8C10.6385 6.8 6.97038 10.4676 6.96876 14.9757C6.96822 16.4167 7.34469 17.8234 8.06004 19.0631L6.9 23.3L11.2343 22.1632C12.4285 22.8147 13.7732 23.1579 15.1414 23.1584H15.1447C19.6509 23.1584 23.319 19.4903 23.3209 14.9825C23.3222 12.7975 22.4727 10.7434 20.9288 9.19784ZM18.8726 16.6876C18.6682 16.5853 17.664 16.0912 17.4765 16.0231C17.2894 15.9548 17.153 15.9207 17.0168 16.1253C16.8807 16.33 16.4892 16.7899 16.37 16.9264C16.2508 17.0628 16.1315 17.0797 15.9275 16.9774C15.8941 16.9606 15.8485 16.9409 15.7923 16.9165C15.5046 16.7917 14.9372 16.5457 14.2845 15.9633C13.6772 15.4215 13.2672 14.7525 13.148 14.5482C13.0287 14.3436 13.1351 14.2331 13.2374 14.1313C13.2988 14.0701 13.3692 13.9843 13.4396 13.8986C13.4747 13.8558 13.5098 13.813 13.5438 13.7734C13.6304 13.6723 13.668 13.5955 13.7191 13.4915C13.7282 13.4728 13.7378 13.4533 13.7482 13.4326C13.8164 13.2962 13.7823 13.177 13.7312 13.0747C13.6972 13.0063 13.5035 12.535 13.328 12.1077C13.2407 11.8952 13.1578 11.6936 13.1013 11.5578C12.9548 11.2061 12.8065 11.207 12.6874 11.2077C12.6716 11.2078 12.6563 11.2079 12.6416 11.2072C12.5226 11.2012 12.3862 11.2001 12.2501 11.2001C12.1139 11.2001 11.8927 11.2511 11.7053 11.4557C11.6932 11.4689 11.6797 11.4833 11.665 11.499C11.4521 11.7263 10.9902 12.2194 10.9902 13.1601C10.9902 14.1632 11.7186 15.1324 11.8237 15.2723L11.8245 15.2733C11.8311 15.2822 11.843 15.2993 11.86 15.3236C12.1039 15.6735 13.3984 17.5307 15.3144 18.3581C15.802 18.5687 16.1823 18.6943 16.4791 18.7884C16.9685 18.9439 17.4138 18.922 17.766 18.8694C18.1586 18.8107 18.9746 18.3753 19.1448 17.8981C19.3151 17.421 19.3151 17.0118 19.2641 16.9266C19.2229 16.8577 19.1264 16.811 18.9833 16.7418C18.949 16.7253 18.912 16.7074 18.8726 16.6876Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex flex-col items-end font-medium text-base text-[#2B5F93]">
+                            <a href="tel:+78123132151" class="hover:text-[#95C1E4] transition-colors">
+                                +7 (812) 313-21-51
+                            </a>
+                            <a href="tel:+79522000007" class="hover:text-[#95C1E4] transition-colors">
+                                +7 (952) 200-00-07
+                            </a>
+                            <a href="mailto:istok_spb@mail.ru" class="hover:text-[#95C1E4] transition-colors">
+                                istok_spb@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-11 text-link fill-[#2B5F93]">
+                        <a href="/pages/page-developing.html"
+                            class="flex items-center gap-x-4 hover:text-[#95C1E4] transition-colors">
+                            <p>Версия для слабовидящих</p>
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect y="0.5" width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1_1081" transform="scale(0.02)" />
+                                    </pattern>
+                                    <image id="image0_1_1081" width="50" height="50"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE9ElEQVR4nO1YS2wcRRAdh98Bwp/wB4mYeLd71wHlwAkMV2KE+BiUeKdqspYsQQAhhRtCKwEBEhPbUzUxmDsSJBARERJIZP7hAEgEkIiCIAc4ADJIxEFKjBMW1UzPfry9Py8WPsyTRhrN9HRXVb96VT2OkyBBggQJEiRIkGDJo3vQP197/l0a+HmNtFsBH9ZI0xr4ZHghTZtnb4VjXO7vyW9Z7iwF9OS3LFdIngaeUshzGrnYzmW+OaBcxv/FqXQ+uF4jj2rkY1WGAX2jkEYywPekcuOZ7PqJi9YMT54ll9xnPc5qj+7VSM9ppE8U0qmK749p4Be1t/3aRXfgpg3+ZQrY18izVdEFfronz1e1O9+qdZOXRk5VzXVSAY3Ju0VxQgOBBv4jWpD+qaDSzs5mLnYppLcjqtEpmdus8bvGwP1PaaSQ3i3Thz/NIK2VXVFAf8t763ducLdC/lAh/xVeQB+IGNjGqlzQLYFRyHPR3PRRxS7tVe74dR05oV16UAPPxBGSpIwiyMMRDehV63dILzRI8M1WZ5BeD8e49HA0R+CGqhfRbSYNwQNtO9DXVzjTJHOcxPszQ+OXlwwFesc8X2fbiaaK5XL//O8yQDkTnH3xs97cxIoyG4TONCK2teTEahy7MKSB4axCesopFJZVR49/jhb1V87/XujUguy+XxMAb/xGE5yfql4UCss08pMlhQOeEhsbOpEaHL1SJNREYFqDf4dtXFTguNibGzm35h3S8aY7AjxTE4CB4DyzIyesayLfHlNNAR9SGFxhdUISSiEfNRE7mnJ5VT2H47yxFbGFOiJz6TrvYohNJRuBfqypOeKdBv7eROSrut6WjT0iY23OxrRs4sjU/O+y+bEeE+3DzVnDhwxrjlTZqpA+MznxdcrlSxpNFDnCe+sle9hvNXFEJLYmAOgPGkf2NFtfiqXYasYfLE8CfNAs8m2lOtWDQt5oKPhanfebGyT6M9bgAO+Idit4qNn6YqPYWutIBbUU0neyfY0myg7615jKPpvdMHGD1TCX+0Wdopyh40In206E6+eC7rDAIs+thpeubrS2tEJRF22hVinZJYHMgHoGlgwFfsXQ6w2nQyikXWbHXm68pr+yHHD+oW6DGSaS4Z5IXdqjWxtFJlYvhbRpoU5o4CdMQP5sJDIZ1++L+q/WBCksiEIDE6HZDNJj0pZYjYgOUqdN4dy0ECfCQgd8uh7tHKfYpZEfr+i4D6wZnryg9RZFzgblRnGPtPC2sQroETHEjHvTVu3tTaKhUxgI3mgb15ubWBG3Q2GLArx1YGDHGU5HTSPQL9LK23ZHErvikDUrCqQ8Xp9BSknFliu8jyR2p3TNMZ3sO1HskgZVAf8aF0nl8YDTCcJckHN2uYH8PJ0LbrFqO7DfypE3GkOTNnVMu/7NclQoF0/aV++osCCYttokm1CJdqchuG3+OJFPqQVCCZHyWH7lXigq72wSK72UkgOWoamIjXTEzmIgOpryaNw0GsX6IuP5eTW07eJ255MuQiMNKeQvK3bghEba1kqH0TFEv40YlH4+hLwH/lgBPauR78vA9l4xRg0Uzu5+1D9H7uWZAv/+qPLLz4cyDUP5Bd7arCAu3u+gMClpf5zA7VzyjUJ+T0REBMFZCjDKtFaiLdIa5gTSb/EPOrk3z3bJmLQX3LlkjE+QIEGCBAkSJEjgNMK/MFD1hMhdVZgAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="/pages/page-developing.html"
+                            class="flex items-center gap-x-4 hover:text-[#95C1E4] transition-colors">
+                            <p>Личный кабинет</p>
+                            <svg width="21" height="21" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd" fill="currentColor" viewBox="0 0 32 32">
+                                <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                                <path
+                                    d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <button onclick="handleOpenMobileMenu()"
+                    class="flex lg:hidden justify-center items-center cursor-pointer hover:opacity-90">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.33333 0C0.596954 0 0 0.596954 0 1.33333C0 2.06971 0.596954 2.66667 1.33333 2.66667H25.3333C26.0697 2.66667 26.6667 2.06971 26.6667 1.33333C26.6667 0.596954 26.0697 0 25.3333 0H1.33333Z"
+                            fill="#275C8F" />
+                        <path
+                            d="M0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H25.3333C26.0697 6.66667 26.6667 7.26362 26.6667 8C26.6667 8.73638 26.0697 9.33333 25.3333 9.33333H1.33333C0.596954 9.33333 0 8.73638 0 8Z"
+                            fill="#275C8F" />
+                        <path
+                            d="M1.33333 13.3333C0.596954 13.3333 0 13.9303 0 14.6667C0 15.403 0.596954 16 1.33333 16H25.3333C26.0697 16 26.6667 15.403 26.6667 14.6667C26.6667 13.9303 26.0697 13.3333 25.3333 13.3333H1.33333Z"
+                            fill="#275C8F" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:block bg-[#275C8F] relative">
+            <div class="container mx-auto">
+                <nav class="flex text-white uppercase font-medium whitespace-nowrap text-center">
+                    <a class="py-3 w-1/5 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Обучение')">Обучение</a>
+                    <a class="py-3 w-1/4 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()"
+                        onmouseover="handleOpenMenu('Психологическая помощь')">Психологическая помощь</a>
+                    <a class="py-3 w-1/5 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Об институте')">Об
+                        институте</a>
+                    <a class="py-3 w-1/6 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        href="/pages/schedule.html">Расписание</a>
+                    <a class="py-3 w-1/6 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Контакты')">Контакты</a>
+                </nav>
+            </div>
+            <div id="header-menu"
+                class="overflow-y-auto overflow-hidden hidden absolute bg-white h-auto w-full z-10 shadow-xl">
+                <div class="container h-full whitespace-nowrap">
+                    <div class="h-full flex" id="header-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="menu" id="mobile-menu" class="hidden h-screen pt-6 pb-24">
+            <button onclick="handleCloseMobileMenu()"
+                class="absolute right-[20px] w-[27px] h-[48px] bg-white z-10 flex justify-center items-center top-4">
+                <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.53991 12.1353L17.0826 19.678C17.3341 19.9209 17.6709 20.0553 18.0204 20.0522C18.37 20.0492 18.7045 19.909 18.9517 19.6618C19.1989 19.4146 19.3391 19.0801 19.3421 18.7305C19.3452 18.3809 19.2108 18.0441 18.9679 17.7927L11.4252 10.25L18.9679 2.70734C19.2108 2.45587 19.3452 2.11907 19.3421 1.76947C19.3391 1.41988 19.1989 1.08546 18.9517 0.838248C18.7045 0.591037 18.37 0.450812 18.0204 0.447774C17.6709 0.444736 17.3341 0.579128 17.0826 0.822006L9.53991 8.36467L1.99725 0.822006C1.74465 0.585132 1.4098 0.455826 1.06356 0.461449C0.717312 0.467071 0.386838 0.607181 0.142061 0.852131C-0.102716 1.09708 -0.242592 1.42765 -0.247969 1.7739C-0.253347 2.12015 -0.123804 2.45491 0.113248 2.70734L7.65458 10.25L0.111915 17.7927C-0.0154319 17.9157 -0.117008 18.0628 -0.186886 18.2255C-0.256765 18.3881 -0.293547 18.5631 -0.295085 18.7401C-0.296624 18.9172 -0.262888 19.0928 -0.195847 19.2566C-0.128806 19.4205 -0.0298018 19.5693 0.0953885 19.6945C0.220579 19.8197 0.369448 19.9187 0.53331 19.9858C0.697172 20.0528 0.872744 20.0865 1.04978 20.085C1.22682 20.0835 1.40178 20.0467 1.56445 19.9768C1.72713 19.9069 1.87425 19.8054 1.99725 19.678L9.53991 12.1353Z"
+                        fill="#275C8F" />
+                </svg>
+            </button>
+            <div class="flex flex-col justify-between h-full gap-y-6">
+                <div class="h-full overflow-hidden overflow-y-auto">
+                    <div class="container">
+                        <div class="flex flex-col gap-y-4">
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Обучение
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Направления
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li>
+                                                    <a href="./pages/therapy.html">
+                                                        Терапия идентичности
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/systemic-family.html">
+                                                        Системные семейные расстановки
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/prof-retraining.html">
+                                                        Программа проф. переподготовки
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Формы обучение
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li class="ml-4">
+                                                    <details class="details1">
+                                                        <summary
+                                                            class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                            Программа повышение
+                                                            <br /> квалификации
+                                                        </summary>
+                                                        <ul
+                                                            class="mt-2 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                            <li>
+                                                                <a href="./pages/therapy.html">
+                                                                    Терапия идентичности
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="./pages/systemic-family.html">
+                                                                    Системные семейные расстановки
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/thematic-seminars.html">
+                                                        Тематические семинары
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/webinars.html">
+                                                        Вебинары
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/programs-cities.html">
+                                                        Программы в других городах
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Психологическая помощь
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/group-programs.html">
+                                            Групповые программы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/consultations-and-recording.html">
+                                            Индивидуальные консультации
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Онлайн запись
+                                        </a>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Об институте
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/about-institute.html">
+                                            История института / Издательство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Сотрудники
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Отзывы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Лицензии на образовательную деятельность
+                                        </a>
+                                    </li>
+
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Документы
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Устав
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Правила приема
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Порядок приема, приостановление приема
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Порядок контроля успеваемости
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Режим занятий
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Срок действия аккредитации образовательных программ
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Структура преподавателей и программ с электронной подписью
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Этический кодекс ОППЛ+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+
+
+                                </ul>
+                            </details>
+                            <a class="cursor-pointer font-medium uppercase text-[#275C8F] select-none"
+                                href="/pages/schedule.html">
+                                Расписание
+                            </a>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Контакты
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/group-programs.html">
+                                            Контакты института
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://minobrnauki.gov.ru">
+                                            Министерство науки и высшего образования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://edu.gov.ru/">
+                                            Министерство просвещения
+                                        </a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div
+                        class="font-medium leading-5 text-[#2B5F93] pt-5 font-sans pb-6 border-y border-[#275C8F] flex flex-col gap-y-2">
+                        <div class="flex gap-2 items-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_416_246" transform="scale(0.02)" />
+                                    </pattern>
+                                    <image id="image0_416_246" width="50" height="50"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE9ElEQVR4nO1YS2wcRRAdh98Bwp/wB4mYeLd71wHlwAkMV2KE+BiUeKdqspYsQQAhhRtCKwEBEhPbUzUxmDsSJBARERJIZP7hAEgEkIiCIAc4ADJIxEFKjBMW1UzPfry9Py8WPsyTRhrN9HRXVb96VT2OkyBBggQJEiRIkGDJo3vQP197/l0a+HmNtFsBH9ZI0xr4ZHghTZtnb4VjXO7vyW9Z7iwF9OS3LFdIngaeUshzGrnYzmW+OaBcxv/FqXQ+uF4jj2rkY1WGAX2jkEYywPekcuOZ7PqJi9YMT54ll9xnPc5qj+7VSM9ppE8U0qmK749p4Be1t/3aRXfgpg3+ZQrY18izVdEFfronz1e1O9+qdZOXRk5VzXVSAY3Ju0VxQgOBBv4jWpD+qaDSzs5mLnYppLcjqtEpmdus8bvGwP1PaaSQ3i3Thz/NIK2VXVFAf8t763ducLdC/lAh/xVeQB+IGNjGqlzQLYFRyHPR3PRRxS7tVe74dR05oV16UAPPxBGSpIwiyMMRDehV63dILzRI8M1WZ5BeD8e49HA0R+CGqhfRbSYNwQNtO9DXVzjTJHOcxPszQ+OXlwwFesc8X2fbiaaK5XL//O8yQDkTnH3xs97cxIoyG4TONCK2teTEahy7MKSB4axCesopFJZVR49/jhb1V87/XujUguy+XxMAb/xGE5yfql4UCss08pMlhQOeEhsbOpEaHL1SJNREYFqDf4dtXFTguNibGzm35h3S8aY7AjxTE4CB4DyzIyesayLfHlNNAR9SGFxhdUISSiEfNRE7mnJ5VT2H47yxFbGFOiJz6TrvYohNJRuBfqypOeKdBv7eROSrut6WjT0iY23OxrRs4sjU/O+y+bEeE+3DzVnDhwxrjlTZqpA+MznxdcrlSxpNFDnCe+sle9hvNXFEJLYmAOgPGkf2NFtfiqXYasYfLE8CfNAs8m2lOtWDQt5oKPhanfebGyT6M9bgAO+Idit4qNn6YqPYWutIBbUU0neyfY0myg7615jKPpvdMHGD1TCX+0Wdopyh40In206E6+eC7rDAIs+thpeubrS2tEJRF22hVinZJYHMgHoGlgwFfsXQ6w2nQyikXWbHXm68pr+yHHD+oW6DGSaS4Z5IXdqjWxtFJlYvhbRpoU5o4CdMQP5sJDIZ1++L+q/WBCksiEIDE6HZDNJj0pZYjYgOUqdN4dy0ECfCQgd8uh7tHKfYpZEfr+i4D6wZnryg9RZFzgblRnGPtPC2sQroETHEjHvTVu3tTaKhUxgI3mgb15ubWBG3Q2GLArx1YGDHGU5HTSPQL9LK23ZHErvikDUrCqQ8Xp9BSknFliu8jyR2p3TNMZ3sO1HskgZVAf8aF0nl8YDTCcJckHN2uYH8PJ0LbrFqO7DfypE3GkOTNnVMu/7NclQoF0/aV++osCCYttokm1CJdqchuG3+OJFPqQVCCZHyWH7lXigq72wSK72UkgOWoamIjXTEzmIgOpryaNw0GsX6IuP5eTW07eJ255MuQiMNKeQvK3bghEba1kqH0TFEv40YlH4+hLwH/lgBPauR78vA9l4xRg0Uzu5+1D9H7uWZAv/+qPLLz4cyDUP5Bd7arCAu3u+gMClpf5zA7VzyjUJ+T0REBMFZCjDKtFaiLdIa5gTSb/EPOrk3z3bJmLQX3LlkjE+QIEGCBAkSJEjgNMK/MFD1hMhdVZgAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                            <p>Версия для слабовидящих</p>
+                        </div>
+                        <div class="flex ml-1.5 font-sans gap-3 items-center">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 10C12.614 10 14.733 7.98528 14.733 5.5C14.733 3.01472 12.614 1 10 1C7.38603 1 5.26699 3.01472 5.26699 5.5C5.26699 7.98528 7.38603 10 10 10Z"
+                                    stroke="#2B5F93" stroke-width="1.71429" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M19 19C18.3886 17.1874 17.1876 15.6061 15.5701 14.4843C13.9526 13.3624 12.0021 12.7579 10 12.7579C7.99786 12.7579 6.04743 13.3624 4.42993 14.4843C2.81242 15.6061 1.61139 17.1874 1 19H19Z"
+                                    stroke="#2B5F93" stroke-width="1.71429" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <p>Личный кабинет</p>
+                        </div>
+                    </div>
+                    <div class="pt-2.5 flex flex-col gap-y-1 text-lg font-medium gap-x-4">
+                        <a href="tel:+78123132151">+7 (812) 313-21-51</a>
+                        <a href="tel:+79522000007">+7 (952) 200-00-07</a>
+                        <a href="mailto:istok_spb@mail.ru">istok_spb@mail.ru</a>
+                    </div>
+                    <div class="flex mt-6 gap-4">
+                        <a target="_blank" href="https://vk.com/istok_spb?ysclid=lkwktxyqi6679740862">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0456 40 40 31.0456 40 20C40 8.9544 31.0456 0 20 0C8.9544 0 0 8.9544 0 20C0 31.0456 8.9544 40 20 40ZM10 13.6C10.1624 21.3952 14.06 26.08 20.8932 26.08H21.2804V21.62C23.7916 21.87 25.69 23.7064 26.4524 26.08H30C29.0256 22.532 26.4648 20.5708 24.8656 19.8212C26.4648 18.8968 28.7132 16.648 29.2504 13.6H26.0272C25.3276 16.0736 23.2544 18.322 21.2804 18.5344V13.6H18.0576V22.2444C16.0588 21.7448 13.5352 19.3216 13.4224 13.6H10Z"
+                                    fill="#275C8F" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://wa.me/79522000007">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95432 31.0457 0 20 0C8.95432 0 0 8.95432 0 20C0 31.0457 8.95432 40 20 40ZM27.905 11.5971C25.8469 9.5364 23.1096 8.40108 20.1933 8.4C14.1846 8.4 9.29384 13.2901 9.29168 19.3009C9.29096 21.2223 9.79292 23.0978 10.7467 24.7508L9.2 30.4L14.9791 28.8842C16.5713 29.7529 18.3643 30.2105 20.1886 30.2112H20.1929C26.2012 30.2112 31.092 25.3204 31.0945 19.31C31.0963 16.3966 29.9636 13.6578 27.905 11.5971ZM25.1634 21.5835C24.891 21.4471 23.552 20.7883 23.302 20.6974C23.0525 20.6064 22.8706 20.561 22.6891 20.8338C22.5076 21.1066 21.9856 21.7199 21.8266 21.9018C21.6677 22.0837 21.5087 22.1062 21.2366 21.9698C21.1921 21.9475 21.1313 21.9212 21.0564 21.8887C20.6728 21.7223 19.9162 21.3942 19.046 20.6177C18.2363 19.8953 17.6896 19.0034 17.5306 18.7309C17.3716 18.4581 17.5135 18.3108 17.6499 18.175C17.7317 18.0935 17.8256 17.9791 17.9195 17.8648C17.9663 17.8078 18.0131 17.7507 18.0584 17.6978C18.1738 17.563 18.224 17.4606 18.2921 17.322C18.3043 17.2971 18.317 17.271 18.3309 17.2435C18.4218 17.0616 18.3764 16.9026 18.3083 16.7662C18.2629 16.6751 18.0047 16.0467 17.7706 15.4769C17.6542 15.1936 17.5438 14.9248 17.4684 14.7437C17.2731 14.2748 17.0753 14.276 16.9165 14.277C16.8954 14.2771 16.875 14.2772 16.8554 14.2762C16.6968 14.2682 16.515 14.2668 16.3334 14.2668C16.1519 14.2668 15.8569 14.3348 15.607 14.6076C15.5909 14.6252 15.5729 14.6444 15.5534 14.6653C15.2695 14.9684 14.6536 15.6259 14.6536 16.8801C14.6536 18.2176 15.6248 19.5099 15.765 19.6964L15.766 19.6978C15.7748 19.7096 15.7907 19.7324 15.8133 19.7648C16.1385 20.2313 17.8646 22.7076 20.4192 23.8108C21.0693 24.0916 21.5764 24.259 21.9721 24.3845C22.6247 24.5918 23.2184 24.5627 23.688 24.4925C24.2114 24.4143 25.2995 23.8338 25.5264 23.1975C25.7534 22.5613 25.7534 22.0157 25.6854 21.9022C25.6306 21.8103 25.5018 21.748 25.311 21.6558C25.2653 21.6337 25.216 21.6099 25.1634 21.5835Z"
+                                    fill="#2B5F93" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://t.me/istokspb">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0456 40 40 31.0456 40 20C40 8.9544 31.0456 0 20 0C8.9544 0 0 8.9544 0 20C0 31.0456 8.9544 40 20 40ZM28.7908 12.7776C28.9452 11.0256 27.0948 11.7472 27.0948 11.7472C25.7288 12.3128 24.32 12.8872 22.896 13.468C18.48 15.2692 13.9184 17.13 10.0324 18.9616C7.9252 19.7344 9.1588 20.5072 9.1588 20.5072L12.4992 21.538C14.0412 22.002 14.8632 21.4864 14.8632 21.4864L22.0584 16.5912C24.628 14.8392 24.0112 16.282 23.3944 16.9004L17.9984 22.0532C17.176 22.7748 17.5872 23.3932 17.9468 23.7024C18.9668 24.602 21.4748 26.248 22.5696 26.9664C22.8544 27.1532 23.0436 27.2776 23.0864 27.3096C23.3432 27.5156 24.7308 28.4432 25.656 28.2372C26.5812 28.0308 26.684 26.8456 26.684 26.8456L27.9172 18.7552C28.102 17.3508 28.3144 16.0008 28.484 14.9224C28.644 13.904 28.766 13.1284 28.7908 12.7776Z"
+                                    fill="#2B5F93" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pt-32 pb-20 lg:py-32 relative">
+            <div class="container z-10">
+                <div class="text-[#275C8F] text-center">
+                    <h1 class="text-2xl leading-7 lg:text-5xl uppercase lg:leading-[3.6rem]">
+                        Системные
+                        <br />
+                        семейные расстановки
+                    </h1>
+                    <p class="text-sm lg:text-base mt-2">Обучающая программа «Системное консультирование и системные
+                        расстановки»
+                        <br />
+                        (на основе системно-фемонологического метода Берта Хеллингера).
+                    </p>
+                    <button class="mt-6 btn">
+                        Узнать подробнее
+                    </button>
+                </div>
+            </div>
+            <div class="absolute left-0 top-0 right-0 w-full">
+                <img src="../images/bg-sistemnie-rastanovki.png" alt="">
+            </div>
+        </div>
+        <div class="relative overflow-hidden lg:pt-10 pb-7 lg:pb-24">
+            <div class="container">
+                <h2
+                    class="text-[#222222] text-2xl lg:text-[2.125rem] text-center leading-8 lg:leading-[3.5rem] uppercase">
+                    Почему системным расстановкам надо учиться в Истоке:
+                </h2>
+                <div class="mt-6 flex flex-col lg:flex-row gap-6">
+                    <div
+                        class="w-full bg-gradient-to-r from-[#87D1FF4D] to-[#F3FBFF] py-6 px-4 border border-[#87D1FF4D] rounded-xl">
+                        <ul class="flex flex-col gap-y-2.5 list-disc pl-5 text-[#275C8F] font-bold leading-7">
+                            <li>Первый курс был проведён в 2004 году, и с тех пор ежегодно Исток выпускает специалистов,
+                                которые успешно работают в системном подходе.</li>
+                            <li>
+                                Обучающая программа была создана на основе немецких стандартов обучения DGfS (немцкое
+                                сообщества системных расстановок) и доказала временем свою эффективность.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div
+                        class="w-full bg-gradient-to-r from-[#87D1FF4D] to-[#F3FBFF] py-6 px-4 border border-[#87D1FF4D] rounded-xl">
+                        <ul class="flex flex-col gap-y-2.5 list-disc pl-5 text-[#275C8F] font-bold leading-7">
+                            <li>
+                                Сочетание теоретических блоков, практических упражнений и проведение собственных
+                                расстановок для исследования своих семейных систем позволяет не только узнать метод, а
+                                понять его на практике.
+                            </li>
+                            <li>
+                                Все студенты и выпускники программы получают возможность дальнейшей профессиональной
+                                поддержки со стороны ИСТОКа: участие в супервизиях для практикующих специалистов,
+                                интервизиях и методических семинарах.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="absolute right-6 bottom-[-340px] z-[-1]">
+                <img class="w-[516px]" src="../images/system-graphic.png" alt="">
+            </div>
+        </div>
+        <div class="relative overflow-hidden py-16 bg-[#275C8F]">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="w-full max-w-[476px] flex flex-col justify-between">
+                        <h2 class="text-5xl text-white uppercase leading-[3.9rem]">
+                            Подробнее
+                            <br />
+                            о методе
+                        </h2>
+                        <div
+                            class="hidden lg:block relative bg-white rounded-[20px] px-[2.125rem] text-[#275C8F] pt-10 pb-7">
+                            <div class="absolute top-5 left-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.166 34.642C7.106 32.454 6 30 6 26.022C6 19.022 10.914 12.748 18.06 9.646L19.846 12.402C13.176 16.01 11.872 20.692 11.352 23.644C12.426 23.088 13.832 22.894 15.21 23.022C18.818 23.356 21.662 26.318 21.662 30C21.662 31.8565 20.9245 33.637 19.6117 34.9497C18.299 36.2625 16.5185 37 14.662 37C13.6353 36.991 12.6207 36.7779 11.6771 36.3731C10.7336 35.9683 9.87997 35.3798 9.166 34.642ZM29.166 34.642C27.106 32.454 26 30 26 26.022C26 19.022 30.914 12.748 38.06 9.646L39.846 12.402C33.176 16.01 31.872 20.692 31.352 23.644C32.426 23.088 33.832 22.894 35.21 23.022C38.818 23.356 41.662 26.318 41.662 30C41.662 31.8565 40.9245 33.637 39.6117 34.9497C38.299 36.2625 36.5185 37 34.662 37C33.6353 36.991 32.6207 36.7779 31.6771 36.3731C30.7336 35.9683 29.88 35.3798 29.166 34.642Z"
+                                        fill="#95C1E4" />
+                                </svg>
+                            </div>
+                            <p class="text-lg leading-7 indent-12">
+                                Помощь - это искусство. Как и любое иное искусство, она требует навыка, которому можно
+                                учиться и в котором необходимо совершенствоваться
+                            </p>
+                            <span class="font-medium mt-3.5 leading-7">© Берт Хеллингер</span>
+                            <div class="absolute right-5 bottom-5">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.8341 13.358C40.8941 15.546 42.0001 18 42.0001 21.978C42.0001 28.978 37.0881 35.252 29.9401 38.354L28.1541 35.598C34.8241 31.99 36.1281 27.308 36.6501 24.356C35.5761 24.912 34.1701 25.106 32.7901 24.978C29.1821 24.644 26.3381 21.682 26.3381 18C26.3381 16.1435 27.0756 14.363 28.3883 13.0503C29.7011 11.7375 31.4816 11 33.3381 11C35.4841 11 37.5381 11.98 38.8341 13.358ZM18.8341 13.358C20.8941 15.546 22.0001 18 22.0001 21.978C22.0001 28.978 17.0881 35.252 9.94009 38.354L8.15409 35.598C14.8241 31.99 16.1281 27.308 16.6481 24.356C15.5741 24.912 14.1681 25.106 12.7901 24.978C9.18209 24.644 6.34009 21.682 6.34009 18C6.34009 16.1435 7.07759 14.363 8.39034 13.0503C9.70309 11.7375 11.4836 11 13.3401 11C15.4861 11 17.5401 11.98 18.8361 13.358H18.8341Z"
+                                        fill="#95C1E4" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-[590px] mt-3 lg:mt-0 w-full flex flex-col gap-y-3 text-lg text-white text-justify leading-7">
+                        <p>
+                            В конце 70-х годов Берт Хеллингер изобрел метод семейных системных расстановок,
+                            рассматривающий человека как элемент системы, которая строится на базовых законах. Нарушение
+                            любого из этих законов приводит к нарушению равновесия в системе что выражается во многих
+                            симптомах и жизненных трудностях клиентов.
+                        </p>
+                        <p>
+                            Суть метода заключается в воссоздании связей между членами семьи, выявлении
+                            дисфункциональных, разрушительных связей и их исцеление. Расстановки возможны как в
+                            индивидуальном консультировании, так и в работе с группой. Основным отличием метода является
+                            то, что заместители воспроизводят «скрытую реальность семьи», то есть те неосознаваемые
+                            взаимоотношения в семье, которые и привели к возникновению проблем у клиента.
+                        </p>
+                        <p>
+                            Обучаясь семейным системным расстановкам в Истоке Вы сможете получить достаточно времени не
+                            только на обретение новых знаний, но и на отработку необходимых навыков и личного опыта в
+                            расстановках. будете учавствовать в большом количестве расстановок в качестве и заместителей
+                            и терапевтов. наработаете навыки метапозиции и чтения поля. будете четко понимать все этапы
+                            расстановки и видеть какой следующий шаг можно сделать в работе в поиске нужного решения.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-6 lg:hidden relative bg-white rounded-[20px] px-[2.125rem] text-[#275C8F] pt-10 pb-7">
+                        <div class="absolute top-5 left-5">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.166 34.642C7.106 32.454 6 30 6 26.022C6 19.022 10.914 12.748 18.06 9.646L19.846 12.402C13.176 16.01 11.872 20.692 11.352 23.644C12.426 23.088 13.832 22.894 15.21 23.022C18.818 23.356 21.662 26.318 21.662 30C21.662 31.8565 20.9245 33.637 19.6117 34.9497C18.299 36.2625 16.5185 37 14.662 37C13.6353 36.991 12.6207 36.7779 11.6771 36.3731C10.7336 35.9683 9.87997 35.3798 9.166 34.642ZM29.166 34.642C27.106 32.454 26 30 26 26.022C26 19.022 30.914 12.748 38.06 9.646L39.846 12.402C33.176 16.01 31.872 20.692 31.352 23.644C32.426 23.088 33.832 22.894 35.21 23.022C38.818 23.356 41.662 26.318 41.662 30C41.662 31.8565 40.9245 33.637 39.6117 34.9497C38.299 36.2625 36.5185 37 34.662 37C33.6353 36.991 32.6207 36.7779 31.6771 36.3731C30.7336 35.9683 29.88 35.3798 29.166 34.642Z"
+                                    fill="#95C1E4" />
+                            </svg>
+                        </div>
+                        <p class="text-lg leading-7 indent-12">
+                            Помощь - это искусство. Как и любое иное искусство, она требует навыка, которому можно
+                            учиться и в котором необходимо совершенствоваться
+                        </p>
+                        <span class="font-medium mt-3.5 leading-7">© Берт Хеллингер</span>
+                        <div class="absolute right-5 bottom-5">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38.8341 13.358C40.8941 15.546 42.0001 18 42.0001 21.978C42.0001 28.978 37.0881 35.252 29.9401 38.354L28.1541 35.598C34.8241 31.99 36.1281 27.308 36.6501 24.356C35.5761 24.912 34.1701 25.106 32.7901 24.978C29.1821 24.644 26.3381 21.682 26.3381 18C26.3381 16.1435 27.0756 14.363 28.3883 13.0503C29.7011 11.7375 31.4816 11 33.3381 11C35.4841 11 37.5381 11.98 38.8341 13.358ZM18.8341 13.358C20.8941 15.546 22.0001 18 22.0001 21.978C22.0001 28.978 17.0881 35.252 9.94009 38.354L8.15409 35.598C14.8241 31.99 16.1281 27.308 16.6481 24.356C15.5741 24.912 14.1681 25.106 12.7901 24.978C9.18209 24.644 6.34009 21.682 6.34009 18C6.34009 16.1435 7.07759 14.363 8.39034 13.0503C9.70309 11.7375 11.4836 11 13.3401 11C15.4861 11 17.5401 11.98 18.8361 13.358H18.8341Z"
+                                    fill="#95C1E4" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 left-0">
+                <img class="w-[1156px]" src="../images/system-method-graphy.png" alt="">
+            </div>
+        </div>
+        <div class="pt-14 pb-7 lg:py-28">
+            <div class="container">
+                <div class="flex flex-col gap-6 lg:flex-row justify-between">
+                    <div class="max-w-[500px] w-full flex flex-col gap-y-4">
+                        <h2 class="uppercase text-2xl lg:text-[2.125rem] text-[#275C8F]">
+                            ПРОГРАММА ОБУЧЕНИЯ
+                        </h2>
+                        <h4 class="lg:text-lg leading-7 font-bold">
+                            Общая продолжительность программы составляет 256 академических часов. Учебная программа
+                            состоит из 8 семинаров по 3 дня.
+                        </h4>
+                        <p class="text-sm lg:text-base leading-7">
+                            Количество участников в группе до 30 человек, что обеспечивает максимальную вовлеченность
+                            каждого, возможность индивидуального общения с преподавателями и проведение собственных
+                            работ с травмой. На семинарах все теоретические аспекты рассматриваются в процессе
+                            дискуссионной беседы, лекций и путём разбора терапевтических процессов. Кроме этого, в
+                            программу входит обучение в регулярных супервизорских группах (60 часов).
+                        </p>
+                        <button class="btn mt-2 w-fit" onclick="openModalForm(event)">
+                            Записаться на обучение
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-y-2 max-w-[613px] w-full bg-[#87D1FF1A] rounded-lg p-6">
+                        <details class=" border-b border-[#275C8F33] open:border-none" open>
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                1-2 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной
+                                    семейной терапии; История создания метода (от классических расстановок до
+                                    «новейших
+                                    расстановок»); Теоретическое обоснование метода; Основные понятия системного подхода
+                                    по
+                                    Берту Хеллингеру (принадлежность, иерархия (порядок), баланс (давать-брать);
+                                    Динамики
+                                    ССР; Этапы ведения расстановки; Роль терапевта, заместителей; Чтение поля; Работа с
+                                    генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                3 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                3 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                4 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                6 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                7 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b border-[#275C8F33] open:border-none">
+                            <summary
+                                class="text-[1.625rem] cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase leading-[3.5rem] text-[#275C8F] select-none">
+                                8 модуль
+                            </summary>
+                            <div class="leading-7 text-justify">
+                                <p>
+                                    Знакомство с методом системных семейных расстановок (ССР); Место ССР в поле
+                                    системной семейной терапии; История создания метода (от классических расстановок
+                                    до «новейших расстановок»); Теоретическое обоснование метода; Основные понятия
+                                    системного подхода по Берту Хеллингеру (принадлежность, иерархия (порядок), баланс
+                                    (давать-брать); Динамики ССР; Этапы ведения расстановки; Роль терапевта,
+                                    заместителей; Чтение поля; Работа с генограммой.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block pt-16 pb-28 bg-[#87D1FF1A]">
+            <div class="container">
+                <h2 class="text-center text-[2.125rem] text-[#275C8F] leading-[2.763rem] uppercase">
+                    Требования к участникам для сертификации:
+                </h2>
+                <div class="mt-8">
+                    <div
+                        class="grid grid-cols-2 grid-flow-dense auto-rows-auto gap-x-4 gap-y-2 text-[#275C8F] font-bold leading-[1.4rem] uppercase">
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+                                <p>1. Посещение всех семинаров</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+
+                                <p>2. Участие в работе малых интервизорских групп (6-8 человек) – 60 часов</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+
+                                <p>3. Участие в работе дополнительных супервизорских групп – 40 часов</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+                                <p>4. Опыт работы в терапевтической группе в позициях клиента и заместителя — 60 часов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+
+                                <p>5. Написание заключительной письменной работы</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-[#275C8F] p-4 rounded-xl">
+                            <div class="max-w-[420px] w-full flex items-center h-full">
+
+                                <p>6. Проведение расстановки в качестве системного терапевта под очную супервизию</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-12 lg:py-24">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="max-w-[600px] w-full">
+                        <h2 class="uppercase text-2xl lg:text-[2.125rem] text-[#275C8F] leading-[3.5rem]">КТО МОЖЕТ
+                            ОБУЧАТЬСЯ</h2>
+                        <div class="my-3">
+                            <p class="text-lg font-bold">Обучение методу доступно для всех желающих:</p>
+                            <ul class="mt-2 leading-7 line-throu list-disc list-inside">
+                                <li>
+                                    После прохождения обучения специалистам с психологическим образованием – выдается
+                                    удостоверение о повышении квалификации.
+                                </li>
+                                <li class="mt-3">
+                                    После прохождения обучения участниками, у которых нет психологического образования –
+                                    выдается удостоверение о дополнительном образовании.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="uppercase text-[#275C8F] text-lg leading-7">ПЕРЕД НАБОРОМ В ГРУППУ, НЕОБХОДИМО
+                                ПРОЙТИ СОБЕСЕДОВАНИЕ!</p>
+                        </div>
+                        <div class="flex flex-col text-center lg:text-start lg:flex-row mt-5 lg:mt-8 gap-x-8">
+                            <div class="flex items-center lg:items-start flex-col gap-y-3">
+                                <p class="">
+                                    Образец удостоверения
+                                    <br />
+                                    о дополнительном образовании:
+                                </p>
+                                <img class="w-[200px]" src="../images/document.png" alt="document">
+                            </div>
+                            <div class="flex mt-3.5 items-center lg:items-start flex-col gap-y-3">
+                                <p class="">
+                                    Образец удостоверения
+                                    <br />
+                                    о повышении квалификации:
+                                </p>
+                                <img class="w-[200px]" src="../images/document2.png" alt="document">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative h-fit mt-4 lg:mt-16 py-8 px-5 lg:px-10 rounded-[0.875rem] max-w-[514px] w-full shadow-[0px_7px_24px_0px_#0000001F]">
+                        <form class="flex flex-col gap-y-2">
+                            <div class="flex flex-col gap-y-3">
+                                <label for="form-name" class="text-sm font-medium leading-5">Имя*</label>
+                                <input placeholder="Например, Алексей" type="text" name="name" id="form-name">
+                            </div>
+                            <div class="flex flex-col gap-y-2">
+                                <label for="form-email" class="text-sm font-medium leading-5">Электронная
+                                    почта*</label>
+                                <input placeholder="емейл@mail.com" type="email" name="name" id="form-email">
+                            </div>
+                            <div class="flex flex-col gap-y-2">
+                                <label for="form-name" class="text-sm font-medium leading-5">Номер телефона*</label>
+                                <input placeholder="+7 ___-___-__-__" type="text" name="name" id="form-name">
+                            </div>
+                            <div class="mt-1.5">
+                                <button class="btn w-full">
+                                    Отправить заявку
+                                </button>
+                            </div>
+                            <div>
+                                <p class="text-[#08040F66] text-sm">
+                                    Нажимая на кнопку, вы соглашаетесь с
+                                    <a class="underline underline-offset-2 hover:opacity-90 transition-opacity"
+                                        href="/">
+                                        политикой конфиденциальности
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                        <span
+                            class="absolute hidden lg:block top-5 right-[-15px] after:content-[''] after:absolute after:w-6 after:h-6 after:rounded-full after:bg-[#95C1E4] after:left-[-32px] after:top-[-30px]">
+                            <img class="w-8" src="../images/blue-circle.png" />
+                        </span>
+                        <span class="absolute hidden lg:block left-[-30px] bottom-4">
+                            <img class="w-12" src="../images/star.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-14 lg:pb-32">
+            <div class="container">
+                <h2 class="uppercase text-black text-2xl lg:text-[1.75rem] leading-[4.063rem] text-center">Преподаватели
+                </h2>
+                <div
+                    class="hidden lg:flex mt-6 snap-x snap-proximity flex-nowrap overflow-hidden justify-between gap-6">
+                    <div class="snap-start flex flex-col gap-y-8">
+                        <div class="w-[calc(100vw_-_40px)] sm:w-[300px] h-[340px] overflow-hidden rounded-[10px]">
+                            <img class="w-full h-full object-cover object-center" src="../images/dliuva0.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                            <span class="text-lg leading-7">Должность</span>
+                        </div>
+                    </div>
+                    <div class="snap-start flex flex-col gap-y-8">
+                        <div class="w-[calc(100vw_-_40px)] sm:w-[300px] h-[340px] overflow-hidden rounded-[10px]">
+                            <img class="w-full h-full object-cover object-center" src="../images/dliuva0.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                            <span class="text-lg leading-7">Должность</span>
+                        </div>
+                    </div>
+                    <div class="snap-start flex flex-col gap-y-8">
+                        <div class="w-[calc(100vw_-_40px)] sm:w-[300px] h-[340px] overflow-hidden rounded-[10px]">
+                            <img class="w-full h-full object-cover object-center" src="../images/dliuva0.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                            <span class="text-lg leading-7">Должность</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 lg:hidden">
+                    <div class="splide" id="splide4">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="flex flex-col gap-y-8">
+                                        <div class="h-full overflow-hidden rounded-[10px]">
+                                            <img class="w-full h-full object-cover object-center"
+                                                src="../images/dliuva0.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                                            <span class="text-lg leading-7">Должность</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-col gap-y-8">
+                                        <div class="h-full overflow-hidden rounded-[10px]">
+                                            <img class="w-full h-full object-cover object-center"
+                                                src="../images/dliuva0.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                                            <span class="text-lg leading-7">Должность</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-col gap-y-8">
+                                        <div class="h-full overflow-hidden rounded-[10px]">
+                                            <img class="w-full h-full object-cover object-center"
+                                                src="../images/dliuva0.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                                            <span class="text-lg leading-7">Должность</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-col gap-y-8">
+                                        <div class="h-full overflow-hidden rounded-[10px]">
+                                            <img class="w-full h-full object-cover object-center"
+                                                src="../images/dliuva0.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="text-[1.375rem] text-[#2B5F93] leading-9">Фамилия Имя отчество</p>
+                                            <span class="text-lg leading-7">Должность</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <div class="flex justify-center">
+                            <div class="flex items-center gap-x-6">
+                                <button onclick="prevSlider4()"
+                                    class="w-12 h-12 hover:opacity-90 transition-opacity flex items-center justify-center rounded-full shadow-[0px_7px_24px_0px_#0000001F]">
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.22559 15L1.99978 8L9.22559 1" stroke="#275C8F" stroke-width="2" />
+                                    </svg>
+                                </button>
+                                <div class="flex gap-x-2.5 thumbnails4">
+                                    <button
+                                        class="thumbnail4 w-2.5 h-2.5 rounded-full border-2 border-[#275C8F]"></button>
+                                    <button
+                                        class="thumbnail4 w-2.5 h-2.5 rounded-full border-2 border-[#275C8F]"></button>
+                                    <button
+                                        class="thumbnail4 w-2.5 h-2.5 rounded-full border-2 border-[#275C8F]"></button>
+                                    <button
+                                        class="thumbnail4 w-2.5 h-2.5 rounded-full border-2 border-[#275C8F]"></button>
+                                </div>
+                                <button onclick="nextSlider4()"
+                                    class="w-12 h-12 hover:opacity-90 transition-opacity flex items-center justify-center rounded-full shadow-[0px_7px_24px_0px_#0000001F]">
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.22559 1L8.45139 8L1.22559 15" stroke="#275C8F" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-hidden relative py-5 lg:pt-24 lg:pb-28 bg-[#275C8F]">
+            <div class="container z-10">
+                <h2 class="text-2xl lg:text-[2.125rem] text-white uppercase leading-[3.5rem] text-center">Расписание
+                    модулей</h2>
+                <div class="relative mt-4 border-2 border-[#87D1FF] rounded-[1.25rem] p-4 lg:py-8 lg:px-12">
+                    <h3 class="lg:text-[1.625rem] text-white leading-9 uppercase font-medium text-center">
+                        1 курс очная форма 2023-2025 гг
+                    </h3>
+                    <div
+                        class="mt-2 lg:mt-6 flex whitespace-nowrap lg:whitespace-normal overflow-x-auto overflow-hidden lg:grid grid-cols-2 grid-rows-4 gap-2">
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-full sm:flex-shrink sm:w-auto flex flex-col lg:flex-row bg-white rounded-xl px-6 py-4 lg:gap-4">
+                            <div class="p-2 flex flex-col gap-2 lg:block">
+                                <p class="text-[1.75rem] leading-[1.75rem] font-medium text-[#275C8F]">6-9 октября</p>
+                                <span class="font-medium text-2xl">10:00 - 18:00</span>
+                            </div>
+                            <div
+                                class="flex items-center pt-3 lg:pt-0 text-center lg:text-start border-t lg:border-l-2 lg:border-t-0 border-[#87D1FF4D] lg:px-4">
+                                <p class="font-bold text-2xl w-full leading-7 text-[#275C8F]">1 модуль</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button onclick="openModalForm(event)"
+                    class="flex justify-center w-full lg:w-auto lg:absolute mt-6 lg:mt-0 -right-10 top-0 cursor-pointer hover:opacity-90 transition-opacity">
+                    <img class="w-[180px] lg:w-[270px]" src="../images/list-button.png" alt="">
+                </button>
+            </div>
+            <span class="absolute right-[-130%] bottom-[-500px] lg:left-[-12%] lg:bottom-[-52%]">
+                <img class="w-[1000px]" src="../images/therapy-bg-modules.png" alt="">
+            </span>
+        </div>
+        <div class="overflow-hidden relative pt-14 lg:pt-20 pb-10 lg:pb-24">
+            <div class="container">
+                <h2 class="uppercase text-2xl lg:text-[2.125rem] text-center leading-10 text-[#275C8F]">Ответы на
+                    частозадаваемые
+                    <br /> вопросы
+                </h2>
+                <div class="px-2 py-6 lg:p-6 mt-9 lg:mt-6 max-w-[900px] w-full mx-auto rounded-lg border-2 border-[#87D1FF4D]"
+                    style="background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+                    linear-gradient(0deg, rgba(135, 209, 255, 0.3), rgba(135, 209, 255, 0.3));
+                    ">
+                    <div class="flex flex-col gap-y-3">
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]" open>
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    Как проходит обучение в Институте и что нужно для поступления?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]">
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    На базе какого образования можно поступить?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]">
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    Как оплатить обучение?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]">
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    Сколько длится обучение?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]">
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    Какой документ я получу в конце обучения?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                        <details class="border-b pb-4 lg:pb-0 border-[#275C8F33]">
+                            <summary
+                                class="lg:text-lg font-medium cursor-pointer hover:opacity-90 hover:after:opacity-90 uppercase lg:leading-[3.5rem] text-[#275C8F] select-none">
+                                <p class="max-w-[300px] lg:max-w-none">
+
+                                    А если я не смогу присутствовать на некоторых занятиях?
+                                </p>
+                            </summary>
+                            <div class="leading-7 text-justify pb-6">
+                                <p class="leading-7 text-base">
+                                    Обучение проводится дистанционно и очно. На семинарах все теоретические аспекты
+                                    рассматриваются в ходе лекций, дискуссионной беседы, и путём разбора терапевтических
+                                    процессов. В ходе конкретной терапевтической работы демонстрируется работа с
+                                    запросом
+                                    клиента.Для участников предоставляется возможность посредством личного опыта и
+                                    саморефлексии подробно и глубоко ознакомиться с методом и сравнить с собственным
+                                    подходом в терапии и консультировании, а также обрести уверенность в практической
+                                    работе
+                                    с другими людьми. Подробнее с программами обучения можно ознакомиться
+                                    <a href="/" class="text-[#275C8F] underline underline-offset-2"> здесь.</a>
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 lg:top-auto lg:bottom-[50%] right-[-20%] lg:right-0 lg:translate-y-2/4 z-[-1]">
+                <img class="w-[700px]" src="../images/therapy-faq-graphic-element.png" alt="">
+            </div>
+        </div>
+        <div class="relative lg:pt-28 pb-6 lg:pb-40">
+            <div class="container">
+                <div class="relative max-w-[650px] w-full mx-auto">
+                    <h2 class="uppercase text-center text-[#275C8F] text-2xl lg:text-[2.125rem] leading-[3.5rem]">
+                        СТОИМОСТЬ ОБУЧЕНИЯ
+                    </h2>
+                    <div class="bg-[#275C8F] rounded-[10px] py-6 px-8 lg:px-3 text-white text-center">
+                        <h3 class="text-[1.625rem] font-bold leading-[2.113rem]">Поэтапная оплата обучения
+                            перед каждым модулем по 20 000 руб </h3>
+                        <p class="mt-2.5 text-lg">
+                            Всего 8 модулей
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-center mt-3">
+                            Участие в супервизорских группах –
+                            <span class="font-bold">
+                                4000 р
+                            </span>
+                            , оплачивается отдельно
+                        </p>
+                    </div>
+                    <div class="mt-4 lg:mt-0 flex justify-center lg:block lg:absolute right-[-155px] bottom-[-60px]">
+                        <button onclick="openModalForm(event)"
+                            class="hover:opacity-90 rounded-full border-2 border-[#87d1ff] w-[214px] h-[214px] p-2.5">
+                            <div class="rounded-full w-full h-full bg-[#87d1ff]">
+                                <div
+                                    class="flex items-center justify-center w-full h-full uppercase text-[#275C8F] font-medium text-center rotate-[-20deg]">
+                                    <p>Хочу здесь <br />учиться</p>
+                                </div>
+                            </div>
+                            </и>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative overflow-hidden bg-[#87D1FF1A] pt-10 lg:pt-32 pb-16 lg:pb-20">
+            <div class="container">
+                <div class="flex flex-col-reverse lg:flex-row gap-20">
+                    <div
+                        class="w-full max-w-[514px] bg-white shadow-[0px_7px_24px_0px_#0000001F] py-8 px-5 lg:px-10 rounded-[0.875rem]">
+                        <form class="flex flex-col gap-y-2">
+                            <div class="flex flex-col gap-y-3">
+                                <label for="form-name" class="text-sm font-medium leading-5">Имя*</label>
+                                <input placeholder="Например, Алексей" type="text" name="name" id="form-name">
+                            </div>
+                            <div class="flex flex-col gap-y-2">
+                                <label for="form-email" class="text-sm font-medium leading-5">Электронная
+                                    почта*</label>
+                                <input placeholder="емейл@mail.com" type="email" name="name" id="form-email">
+                            </div>
+                            <div class="flex flex-col gap-y-2">
+                                <label for="form-name" class="text-sm font-medium leading-5">Номер телефона*</label>
+                                <input placeholder="+7 ___-___-__-__" type="text" name="name" id="form-name">
+                            </div>
+                            <div class="mt-1.5">
+                                <button class="btn w-full">
+                                    Записаться сейчас
+                                </button>
+                            </div>
+                            <div>
+                                <p class="text-[#08040F66] text-sm">
+                                    Нажимая на кнопку, вы соглашаетесь с
+                                    <a class="underline underline-offset-2 hover:opacity-90 transition-opacity"
+                                        href="/">
+                                        политикой конфиденциальности
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <div>
+                            <h2
+                                class="text-[#275C8F] uppercase text-2xl lg:text-[2.125rem] leading-[1.95rem    ] lg:leading-[2.763rem]">
+                                Контакты
+                            </h2>
+                            <p class="leading-7 mt-3">
+                                Для регистрации в программе и за дополнительной
+                                <br />
+                                информацией Вы можете обращаться по телефону:
+                            </p>
+                        </div>
+                        <div class="mt-6 flex flex-col gap-y-6">
+                            <div class="text-[#275C8F] flex flex-col gap-y-4 font-bold text-lg leading-[1.938rem]">
+                                <a href="tel:+78123132151"
+                                    class="flex items-center gap-x-3 hover:opacity-90 transition-opacity">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_213_236)">
+                                            <path
+                                                d="M11 10.1309C10 11.1309 10 12.1309 9 12.1309C8 12.1309 7 11.1309 6 10.1309C5 9.13086 4 8.13086 4 7.13086C4 6.13086 5 6.13086 6 5.13086C7 4.13086 4 1.13086 3 1.13086C2 1.13086 0 4.13086 0 4.13086C0 6.13086 2.055 10.1859 4 12.1309C5.945 14.0759 10 16.1309 12 16.1309C12 16.1309 15 14.1309 15 13.1309C15 12.1309 12 9.13086 11 10.1309Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_213_236">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0 0.130859)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="whitespace-nowrap">
+                                        +7 (812) 313-21-51
+                                    </p>
+                                </a>
+                                <a href="tel:+79522000007"
+                                    class="flex items-center gap-x-3 hover:opacity-90 transition-opacity">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_213_236)">
+                                            <path
+                                                d="M11 10.1309C10 11.1309 10 12.1309 9 12.1309C8 12.1309 7 11.1309 6 10.1309C5 9.13086 4 8.13086 4 7.13086C4 6.13086 5 6.13086 6 5.13086C7 4.13086 4 1.13086 3 1.13086C2 1.13086 0 4.13086 0 4.13086C0 6.13086 2.055 10.1859 4 12.1309C5.945 14.0759 10 16.1309 12 16.1309C12 16.1309 15 14.1309 15 13.1309C15 12.1309 12 9.13086 11 10.1309Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_213_236">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0 0.130859)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div>
+                                        <p>
+                                            +7 (952) 200-00-07
+                                        </p>
+                                        <p class="text-sm font-normal text-[#95C1E4]">(What’s App, Telegram, VK)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <label for="email-link" class="leading-7">
+                                    или написать на почту:
+                                </label>
+                                <a id="email-link" href="mailto:istok_spb@mail.ru"
+                                    class="flex gap-x-3 items-center text-[#275C8F] font-bold text-lg leading-[1.938rem] hover:opacity-90 transition-opacity">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_213_261)">
+                                            <path
+                                                d="M18.3333 6.41003V14.2975C18.3333 14.9352 18.0897 15.5488 17.6522 16.0128C17.2148 16.4767 16.6165 16.756 15.98 16.7934L15.8333 16.7975H4.16663C3.52895 16.7976 2.91536 16.5539 2.45141 16.1165C1.98745 15.679 1.7082 15.0808 1.67079 14.4442L1.66663 14.2975V6.41003L9.53746 11.6575L9.63412 11.7125C9.74805 11.7682 9.87317 11.7971 9.99996 11.7971C10.1267 11.7971 10.2519 11.7682 10.3658 11.7125L10.4625 11.6575L18.3333 6.41003Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M15.8333 3.46423C16.7333 3.46423 17.5225 3.93923 17.9625 4.6534L9.99998 9.96173L2.03748 4.6534C2.24642 4.31404 2.53349 4.02957 2.87473 3.82372C3.21598 3.61787 3.6015 3.49661 3.99914 3.47007L4.16664 3.46423H15.8333Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_213_261">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(0 0.130859)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p>istok_spb@mail.ru</p>
+
+
+                                </a>
+                            </div>
+                            <div>
+                                <label class="leading-7">
+                                    наш адрес:
+                                </label>
+                                <div
+                                    class="flex gap-x-3 items-center text-[#275C8F] font-bold text-lg leading-[1.938rem]">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 1.88086C8.17727 1.88293 6.42979 2.60792 5.14092 3.89678C3.85206 5.18565 3.12707 6.93313 3.125 8.75586C3.125 14.6387 9.375 19.0816 9.64141 19.2676C9.74649 19.3412 9.87169 19.3807 10 19.3807C10.1283 19.3807 10.2535 19.3412 10.3586 19.2676C10.625 19.0816 16.875 14.6387 16.875 8.75586C16.8729 6.93313 16.1479 5.18565 14.8591 3.89678C13.5702 2.60792 11.8227 1.88293 10 1.88086ZM10 6.25586C10.4945 6.25586 10.9778 6.40248 11.3889 6.67719C11.8 6.95189 12.1205 7.34234 12.3097 7.79915C12.4989 8.25597 12.5484 8.75863 12.452 9.24359C12.3555 9.72854 12.1174 10.174 11.7678 10.5236C11.4181 10.8733 10.9727 11.1114 10.4877 11.2078C10.0028 11.3043 9.50011 11.2548 9.04329 11.0656C8.58648 10.8763 8.19603 10.5559 7.92133 10.1448C7.64662 9.73366 7.5 9.25031 7.5 8.75586C7.5 8.09282 7.76339 7.45693 8.23223 6.98809C8.70107 6.51925 9.33696 6.25586 10 6.25586Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <p>Санкт-Петербург, Лермонтовский пр-т. 12, офис 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute z-[-1] bottom-12 lg:bottom-auto lg:top-[-90px] left-[-160px]">
+                    <img class="w-[400px]" src="../images/contact-graphic.png" alt="contact-graphic">
+                </div>
+            </div>
+            <div class="absolute z-[-1] -right-24 -bottom-32 lg:right-0 lg:bottom-[-200px]">
+                <img class="w-[400px]" src="../images/contact-graphic2.png" alt="contact-graphic">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pb-6 pt-8 lg:pt-14 bg-[#2B5F93]">
+            <div class="container">
+                <div class="flex gap-y-8 lg:gap-y-0 flex-col lg:flex-row justify-between">
+                    <ul class="flex flex-wrap justify-between lg:block text-[#F8FBFF] font-light text-xs">
+                        <li class="w-full">
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                ОБУЧЕНИЕ
+                            </p>
+                        </li>
+                        <li class="flex gap-y-3.5 flex-col mt-4">
+                            <a href="/">Терапия Идентичности</a>
+                            <a href="/">Системные семейные расстановки</a>
+                            <a href="/">Тематические семинары</a>
+                            <a href="/">Вебинары</a>
+                            <a href="/">Расписание</a>
+                        </li>
+                    </ul>
+                    <ul class="text-[#F8FBFF] font-light text-xs">
+                        <li>
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                ПСИХОЛОГИЧЕСКАЯ ПОМОЩЬ
+                            </p>
+                        </li>
+                        <li class="flex flex-col gap-y-3.5 mt-4">
+                            <a href="/">Групповые программы</a>
+                            <a href="/">Индивидуальные консультации</a>
+                            <a href="/">Программы в других городах</a>
+                            <a href="/">Онлайн консультации</a>
+                        </li>
+
+                    </ul>
+                    <ul class="flex flex-wrap justify-between lg:block text-[#F8FBFF] font-light text-xs">
+                        <li class="w-full">
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                КОНТАКТЫ
+                            </p>
+                        </li>
+                        <li class="flex flex-col gap-y-3.5 mt-4">
+                            <a href="tel:78123132151">
+                                +7 (812) 313-21-51
+                            </a>
+                            <a href="tel:79522000007">
+                                +7 (952) 200-00-07
+                            </a>
+                            <a href="mailto:istok_spb@mail.ru">
+                                istok_spb@mail.ru
+                            </a>
+                            <p>
+                                Санкт-Петербург, Лермонтовский проспект 12-2
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="text-[#F8FBFF]">
+                        <p class="font-bold uppercase text-sm tracking-[1px]">
+                            Материалы для психологов
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex gap-x-2.5">
+                                <input class="outline-0 rounded-none border-none text-base px-5 py-2.5 text-[#3e3e3e]"
+                                    placeholder="Бесплатно на e-mail" />
+                                <button class="border border-white px-3 hover:opacity-90 transition-opacity">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 17.8436L20 9.28363L0 0.723633V7.36363L14.32 9.28363L0 11.2036V17.8436Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="font-light color-white text-xs mt-4">
+                                Нажимая на кнопку, вы соглашаетесь
+                                <br />
+                                с политикой обработки персональных данных.
+                            </p>
+                        </div>
+                        <div class="mt-7">
+                            <div class="flex items-center gap-x-4 lg:gap-x-2.5">
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[34px] h-[21px] lg:w-[21px] lg:h-[14px]" viewBox="0 0 21 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4378 13.7619C4.2629 13.7619 0.170518 8.84308 0 0.658203H3.594C3.71205 6.6657 6.36157 9.21035 8.46027 9.73503V0.658203H11.8446V5.83933C13.917 5.61635 16.0941 3.25533 16.8286 0.658203H20.2129C19.6489 3.8587 17.2878 6.21973 15.6089 7.19038C17.2878 7.97738 19.9769 10.0367 21 13.7619H17.2747C16.4746 11.2697 14.481 9.34153 11.8446 9.0792V13.7619H11.4378Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[30px] h-[25px] lg:w-[21px] lg:h-[18px]" viewBox="0 0 21 18"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.7949 1.05535C18.7949 1.05535 20.6451 0.3339 20.4909 2.08595C20.4395 2.8074 19.977 5.3324 19.6172 8.06355L18.3838 16.1539C18.3838 16.1539 18.281 17.3391 17.3559 17.5452C16.4308 17.7513 15.0432 16.8238 14.7862 16.6176C14.5807 16.4631 10.9318 14.1441 9.64695 13.0105C9.2872 12.7013 8.87605 12.0829 9.69835 11.3615L15.0946 6.20845C15.7113 5.59005 16.328 4.1472 13.7584 5.89925L6.56337 10.7947C6.56337 10.7947 5.7411 11.31 4.19932 10.8462L0.858774 9.81557C0.858774 9.81557 -0.374663 9.04263 1.73245 8.26963C6.87177 5.84768 13.1931 3.3742 18.7949 1.05535Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[28px] h-[28px] lg:w-[21px] lg:h-[21px]" viewBox="0 0 21 21"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.542 0.158203C13.206 0.159203 15.7064 1.19625 17.5865 3.07868C19.4669 4.96105 20.5016 7.46283 20.5 10.1241C20.4977 15.6145 16.0301 20.0821 10.5417 20.0821H10.5377C8.8713 20.0814 7.23345 19.6634 5.77905 18.8699L0.5 20.2545L1.9129 15.0941C1.04162 13.5843 0.583075 11.871 0.583725 10.1158C0.58575 4.6251 5.05335 0.158203 10.542 0.158203ZM13.3844 11.349C13.6127 11.4321 14.8358 12.0338 15.0847 12.1584C15.1328 12.1825 15.1778 12.2043 15.2196 12.2245C15.3938 12.3087 15.5114 12.3656 15.5616 12.4495C15.6237 12.5532 15.6237 13.0516 15.4163 13.6328C15.209 14.2139 14.2151 14.7443 13.7369 14.8157C13.308 14.8798 12.7657 14.9064 12.1695 14.717C11.8081 14.6024 11.3449 14.4495 10.751 14.193C8.41745 13.1853 6.8407 10.9232 6.54368 10.4971C6.52298 10.4674 6.50853 10.4467 6.50043 10.4359L6.49953 10.4346C6.3715 10.2643 5.4843 9.08375 5.4843 7.86193C5.4843 6.71633 6.04682 6.11578 6.3061 5.839C6.32402 5.81988 6.34047 5.80228 6.3552 5.78615C6.58352 5.53693 6.853 5.4748 7.01877 5.4748C7.18463 5.4748 7.35073 5.47613 7.49565 5.48345C7.51353 5.48435 7.53215 5.4842 7.5514 5.48413C7.6965 5.48323 7.87717 5.48213 8.05552 5.91043C8.1244 6.07588 8.2253 6.32145 8.33162 6.58025C8.54545 7.10075 8.78127 7.6747 8.8228 7.75795C8.88492 7.88255 8.92645 8.02775 8.8434 8.19388C8.83075 8.2191 8.81907 8.24288 8.80795 8.26558C8.74578 8.3923 8.69987 8.4858 8.5945 8.60893C8.55312 8.65728 8.51033 8.70933 8.46758 8.76148C8.38182 8.86593 8.29605 8.9704 8.22132 9.04488C8.09675 9.16883 7.96715 9.3034 8.11232 9.55263C8.25757 9.80148 8.757 10.6163 9.49667 11.2762C10.2915 11.9855 10.9825 12.2852 11.3329 12.4371C11.4014 12.4669 11.457 12.4909 11.4977 12.5113C11.7462 12.6359 11.8914 12.6153 12.0366 12.4491C12.1818 12.283 12.6587 11.7228 12.8245 11.4736C12.9903 11.2244 13.1565 11.2659 13.3844 11.349Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="/"
+                                class="font-light color-white text-xs hover:opacity-90 transition-opacity">Политика
+                                конфиденциальности</a>
+                        </div>
+                        <div class="mt-2.5">
+                            <div class="flex gap-x-2.5 items-center">
+                                <img class="w-12 h-full" src="../images/flag.png" alt="flag">
+                                <img class="w-12 h-full" src="../images/flag1.png" alt="glag2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-start text-xs font-light text-[#F8FBFF] mt-10">
+                    <p>
+                        Информация на данном сайте не является публичной офертой.
+                        <br />
+                        При копировании любой информации ссылка на сайт обязательна.
+                    </p>
+                    <p class="text-[10px] lg:text-xs">© 2023 Санкт-Петербургский институт системной травматерапии</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <div class="hidden z-50 fixed justify-center lg:items-center inset-0 bg-gray-900 bg-opacity-80 overflow-y-auto h-full w-full pt-10 lg:p-10"
+        id="modal-form">
+        <div
+            class="w-full max-w-[514px] mt-auto lg:mt-0 bg-white shadow-[0px_7px_24px_0px_#0000001F] py-8 px-5 lg:px-10 rounded-t-[0.875rem]  lg:rounded-[0.875rem]">
+            <form class="flex flex-col gap-y-2">
+                <div class="flex flex-col gap-y-3">
+                    <label for="form-name" class="text-sm font-medium leading-5">Имя*</label>
+                    <input placeholder="Например, Алексей" type="text" name="name" id="form-name">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label for="form-email" class="text-sm font-medium leading-5">Электронная
+                        почта*</label>
+                    <input placeholder="емейл@mail.com" type="email" name="name" id="form-email">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label for="form-name" class="text-sm font-medium leading-5">Номер телефона*</label>
+                    <input placeholder="+7 ___-___-__-__" type="text" name="name" id="form-name">
+                </div>
+                <div class="mt-1.5">
+                    <button class="btn w-full">
+                        Записаться сейчас
+                    </button>
+                </div>
+                <div>
+                    <p class="text-[#08040F66] text-sm">
+                        Нажимая на кнопку, вы соглашаетесь с
+                        <a class="underline underline-offset-2 hover:opacity-90 transition-opacity" href="/">
+                            политикой конфиденциальности
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const modalForm = document.getElementById("modal-form")
+
+    const openModalForm = (e) => {
+        e.stopPropagation()
+        modalForm.classList.remove("hidden")
+        modalForm.classList.add('flex')
+        body.classList.add("overflow-hidden")
+    }
+
+    const closeModalForm = () => {
+        modalForm.classList.add("hidden")
+        body.classList.remove("overflow-hidden")
+    }
+    window.onclick = function (event) {
+        if (event.target == modalForm) {
+            closeModalForm()
+        }
+    }
+</script>
+
+</html>

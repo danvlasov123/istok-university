@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="fixed w-full bg-white z-50 lg:h-auto lg:relative">
+        <div class="container pb-2 lg:pb-4 pt-2">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-2 lg:mt-6 items-center lg:items-start">
+                    <a href="/" class="lg:mt-6 lg:mr-2.5">
+                        <img src="./images/logo.jpg" class="w-[100px] md:w-[120px] lg:w-[160px]" alt="SVG" />
+                    </a>
+                    <div class="max-w-[206px] lg:max-w-[400px] lg:mb-1">
+                        <p
+                            class="lg:py-2 font-medium uppercase text-[#2B5F93] text-[12px] leading-[14px] md:text-xs lg:text-lg lg:leading-[20px]">
+                            Санкт-Петербургский Институт
+                            Системной Травматерапии
+                        </p>
+                        <a href="/"
+                            class="text-link lg:mt-0 leading-[10px] hover:text-[#95C1E4] font-sans text-[8px] lg:text-xs underline">
+                            Образовательная лицензия от 23.03.2021 №4388
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col justify-center items-end font-sans gap-y-2">
+                    <div class="flex items-center gap-x-8">
+                        <div class="flex gap-x-2.5 text-[#2B5F93]">
+                            <a target="_blank" href="https://vk.com/istok_spb?ysclid=lkwktxyqi6679740862"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2842 30.5 30 23.7842 30 15.5C30 7.2158 23.2842 0.5 15 0.5C6.7158 0.5 0 7.2158 0 15.5C0 23.7842 6.7158 30.5 15 30.5ZM7.5 10.7C7.6218 16.5464 10.545 20.06 15.6699 20.06H15.9603V16.715C17.8437 16.9025 19.2675 18.2798 19.8393 20.06H22.5C21.7692 17.399 19.8486 15.9281 18.6492 15.3659C19.8486 14.6726 21.5349 12.986 21.9378 10.7H19.5204C18.9957 12.5552 17.4408 14.2415 15.9603 14.4008V10.7H13.5432V17.1833C12.0441 16.8086 10.1514 14.9912 10.0668 10.7H7.5Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a target="_blank" href="https://t.me/istokspb"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2842 30.5 30 23.7842 30 15.5C30 7.2158 23.2842 0.5 15 0.5C6.7158 0.5 0 7.2158 0 15.5C0 23.7842 6.7158 30.5 15 30.5ZM21.5931 10.0832C21.7089 8.7692 20.3211 9.3104 20.3211 9.3104C19.2966 9.7346 18.24 10.1654 17.172 10.601C13.86 11.9519 10.4388 13.3475 7.5243 14.7212C5.9439 15.3008 6.8691 15.8804 6.8691 15.8804L9.3744 16.6535C10.5309 17.0015 11.1474 16.6148 11.1474 16.6148L16.5438 12.9434C18.471 11.6294 18.0084 12.7115 17.5458 13.1753L13.4988 17.0399C12.882 17.5811 13.1904 18.0449 13.4601 18.2768C14.2251 18.9515 16.1061 20.186 16.9272 20.7248C17.1408 20.8649 17.2827 20.9582 17.3148 20.9822C17.5074 21.1367 18.5481 21.8324 19.242 21.6779C19.9359 21.5231 20.013 20.6342 20.013 20.6342L20.9379 14.5664C21.0765 13.5131 21.2358 12.5006 21.363 11.6918C21.483 10.928 21.5745 10.3463 21.5931 10.0832Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a target="_blank" href="https://wa.me/79522000007"
+                                class="hover:text-[#95C1E4] transition-colors">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 30.5C23.2843 30.5 30 23.7843 30 15.5C30 7.21574 23.2843 0.5 15 0.5C6.71574 0.5 0 7.21574 0 15.5C0 23.7843 6.71574 30.5 15 30.5ZM20.9288 9.19784C19.3852 7.6523 17.3322 6.80081 15.145 6.8C10.6385 6.8 6.97038 10.4676 6.96876 14.9757C6.96822 16.4167 7.34469 17.8234 8.06004 19.0631L6.9 23.3L11.2343 22.1632C12.4285 22.8147 13.7732 23.1579 15.1414 23.1584H15.1447C19.6509 23.1584 23.319 19.4903 23.3209 14.9825C23.3222 12.7975 22.4727 10.7434 20.9288 9.19784ZM18.8726 16.6876C18.6682 16.5853 17.664 16.0912 17.4765 16.0231C17.2894 15.9548 17.153 15.9207 17.0168 16.1253C16.8807 16.33 16.4892 16.7899 16.37 16.9264C16.2508 17.0628 16.1315 17.0797 15.9275 16.9774C15.8941 16.9606 15.8485 16.9409 15.7923 16.9165C15.5046 16.7917 14.9372 16.5457 14.2845 15.9633C13.6772 15.4215 13.2672 14.7525 13.148 14.5482C13.0287 14.3436 13.1351 14.2331 13.2374 14.1313C13.2988 14.0701 13.3692 13.9843 13.4396 13.8986C13.4747 13.8558 13.5098 13.813 13.5438 13.7734C13.6304 13.6723 13.668 13.5955 13.7191 13.4915C13.7282 13.4728 13.7378 13.4533 13.7482 13.4326C13.8164 13.2962 13.7823 13.177 13.7312 13.0747C13.6972 13.0063 13.5035 12.535 13.328 12.1077C13.2407 11.8952 13.1578 11.6936 13.1013 11.5578C12.9548 11.2061 12.8065 11.207 12.6874 11.2077C12.6716 11.2078 12.6563 11.2079 12.6416 11.2072C12.5226 11.2012 12.3862 11.2001 12.2501 11.2001C12.1139 11.2001 11.8927 11.2511 11.7053 11.4557C11.6932 11.4689 11.6797 11.4833 11.665 11.499C11.4521 11.7263 10.9902 12.2194 10.9902 13.1601C10.9902 14.1632 11.7186 15.1324 11.8237 15.2723L11.8245 15.2733C11.8311 15.2822 11.843 15.2993 11.86 15.3236C12.1039 15.6735 13.3984 17.5307 15.3144 18.3581C15.802 18.5687 16.1823 18.6943 16.4791 18.7884C16.9685 18.9439 17.4138 18.922 17.766 18.8694C18.1586 18.8107 18.9746 18.3753 19.1448 17.8981C19.3151 17.421 19.3151 17.0118 19.2641 16.9266C19.2229 16.8577 19.1264 16.811 18.9833 16.7418C18.949 16.7253 18.912 16.7074 18.8726 16.6876Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex flex-col items-end font-medium text-base text-[#2B5F93]">
+                            <a href="tel:+78123132151" class="hover:text-[#95C1E4] transition-colors">
+                                +7 (812) 313-21-51
+                            </a>
+                            <a href="tel:+79522000007" class="hover:text-[#95C1E4] transition-colors">
+                                +7 (952) 200-00-07
+                            </a>
+                            <a href="mailto:istok_spb@mail.ru" class="hover:text-[#95C1E4] transition-colors">
+                                istok_spb@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-11 text-link fill-[#2B5F93]">
+                        <a href="/pages/page-developing.html"
+                            class="flex items-center gap-x-4 hover:text-[#95C1E4] transition-colors">
+                            <p>Версия для слабовидящих</p>
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect y="0.5" width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1_1081" transform="scale(0.02)" />
+                                    </pattern>
+                                    <image id="image0_1_1081" width="50" height="50"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE9ElEQVR4nO1YS2wcRRAdh98Bwp/wB4mYeLd71wHlwAkMV2KE+BiUeKdqspYsQQAhhRtCKwEBEhPbUzUxmDsSJBARERJIZP7hAEgEkIiCIAc4ADJIxEFKjBMW1UzPfry9Py8WPsyTRhrN9HRXVb96VT2OkyBBggQJEiRIkGDJo3vQP197/l0a+HmNtFsBH9ZI0xr4ZHghTZtnb4VjXO7vyW9Z7iwF9OS3LFdIngaeUshzGrnYzmW+OaBcxv/FqXQ+uF4jj2rkY1WGAX2jkEYywPekcuOZ7PqJi9YMT54ll9xnPc5qj+7VSM9ppE8U0qmK749p4Be1t/3aRXfgpg3+ZQrY18izVdEFfronz1e1O9+qdZOXRk5VzXVSAY3Ju0VxQgOBBv4jWpD+qaDSzs5mLnYppLcjqtEpmdus8bvGwP1PaaSQ3i3Thz/NIK2VXVFAf8t763ducLdC/lAh/xVeQB+IGNjGqlzQLYFRyHPR3PRRxS7tVe74dR05oV16UAPPxBGSpIwiyMMRDehV63dILzRI8M1WZ5BeD8e49HA0R+CGqhfRbSYNwQNtO9DXVzjTJHOcxPszQ+OXlwwFesc8X2fbiaaK5XL//O8yQDkTnH3xs97cxIoyG4TONCK2teTEahy7MKSB4axCesopFJZVR49/jhb1V87/XujUguy+XxMAb/xGE5yfql4UCss08pMlhQOeEhsbOpEaHL1SJNREYFqDf4dtXFTguNibGzm35h3S8aY7AjxTE4CB4DyzIyesayLfHlNNAR9SGFxhdUISSiEfNRE7mnJ5VT2H47yxFbGFOiJz6TrvYohNJRuBfqypOeKdBv7eROSrut6WjT0iY23OxrRs4sjU/O+y+bEeE+3DzVnDhwxrjlTZqpA+MznxdcrlSxpNFDnCe+sle9hvNXFEJLYmAOgPGkf2NFtfiqXYasYfLE8CfNAs8m2lOtWDQt5oKPhanfebGyT6M9bgAO+Idit4qNn6YqPYWutIBbUU0neyfY0myg7615jKPpvdMHGD1TCX+0Wdopyh40In206E6+eC7rDAIs+thpeubrS2tEJRF22hVinZJYHMgHoGlgwFfsXQ6w2nQyikXWbHXm68pr+yHHD+oW6DGSaS4Z5IXdqjWxtFJlYvhbRpoU5o4CdMQP5sJDIZ1++L+q/WBCksiEIDE6HZDNJj0pZYjYgOUqdN4dy0ECfCQgd8uh7tHKfYpZEfr+i4D6wZnryg9RZFzgblRnGPtPC2sQroETHEjHvTVu3tTaKhUxgI3mgb15ubWBG3Q2GLArx1YGDHGU5HTSPQL9LK23ZHErvikDUrCqQ8Xp9BSknFliu8jyR2p3TNMZ3sO1HskgZVAf8aF0nl8YDTCcJckHN2uYH8PJ0LbrFqO7DfypE3GkOTNnVMu/7NclQoF0/aV++osCCYttokm1CJdqchuG3+OJFPqQVCCZHyWH7lXigq72wSK72UkgOWoamIjXTEzmIgOpryaNw0GsX6IuP5eTW07eJ255MuQiMNKeQvK3bghEba1kqH0TFEv40YlH4+hLwH/lgBPauR78vA9l4xRg0Uzu5+1D9H7uWZAv/+qPLLz4cyDUP5Bd7arCAu3u+gMClpf5zA7VzyjUJ+T0REBMFZCjDKtFaiLdIa5gTSb/EPOrk3z3bJmLQX3LlkjE+QIEGCBAkSJEjgNMK/MFD1hMhdVZgAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="/pages/page-developing.html"
+                            class="flex items-center gap-x-4 hover:text-[#95C1E4] transition-colors">
+                            <p>Личный кабинет</p>
+                            <svg width="21" height="21" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd" fill="currentColor" viewBox="0 0 32 32">
+                                <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                                <path
+                                    d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <button onclick="handleOpenMobileMenu()"
+                    class="flex lg:hidden justify-center items-center cursor-pointer hover:opacity-90">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.33333 0C0.596954 0 0 0.596954 0 1.33333C0 2.06971 0.596954 2.66667 1.33333 2.66667H25.3333C26.0697 2.66667 26.6667 2.06971 26.6667 1.33333C26.6667 0.596954 26.0697 0 25.3333 0H1.33333Z"
+                            fill="#275C8F" />
+                        <path
+                            d="M0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H25.3333C26.0697 6.66667 26.6667 7.26362 26.6667 8C26.6667 8.73638 26.0697 9.33333 25.3333 9.33333H1.33333C0.596954 9.33333 0 8.73638 0 8Z"
+                            fill="#275C8F" />
+                        <path
+                            d="M1.33333 13.3333C0.596954 13.3333 0 13.9303 0 14.6667C0 15.403 0.596954 16 1.33333 16H25.3333C26.0697 16 26.6667 15.403 26.6667 14.6667C26.6667 13.9303 26.0697 13.3333 25.3333 13.3333H1.33333Z"
+                            fill="#275C8F" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:block bg-[#275C8F] relative">
+            <div class="container mx-auto">
+                <nav class="flex text-white uppercase font-medium whitespace-nowrap text-center">
+                    <a class="py-3 w-1/5 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Обучение')">Обучение</a>
+                    <a class="py-3 w-1/4 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()"
+                        onmouseover="handleOpenMenu('Психологическая помощь')">Психологическая помощь</a>
+                    <a class="py-3 w-1/5 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Об институте')">Об
+                        институте</a>
+                    <a class="py-3 w-1/6 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        href="/pages/schedule.html">Расписание</a>
+                    <a class="py-3 w-1/6 hover:bg-[#95C1E4] transition-colors cursor-pointer"
+                        onmouseout="handleCloseMenu()" onmouseover="handleOpenMenu('Контакты')">Контакты</a>
+                </nav>
+            </div>
+            <div id="header-menu"
+                class="overflow-y-auto overflow-hidden hidden absolute bg-white h-auto w-full z-10 shadow-xl">
+                <div class="container h-full whitespace-nowrap">
+                    <div class="h-full flex" id="header-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="menu" id="mobile-menu" class="hidden h-screen pt-6 pb-24">
+            <button onclick="handleCloseMobileMenu()"
+                class="absolute right-[20px] w-[27px] h-[48px] bg-white z-10 flex justify-center items-center top-4">
+                <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.53991 12.1353L17.0826 19.678C17.3341 19.9209 17.6709 20.0553 18.0204 20.0522C18.37 20.0492 18.7045 19.909 18.9517 19.6618C19.1989 19.4146 19.3391 19.0801 19.3421 18.7305C19.3452 18.3809 19.2108 18.0441 18.9679 17.7927L11.4252 10.25L18.9679 2.70734C19.2108 2.45587 19.3452 2.11907 19.3421 1.76947C19.3391 1.41988 19.1989 1.08546 18.9517 0.838248C18.7045 0.591037 18.37 0.450812 18.0204 0.447774C17.6709 0.444736 17.3341 0.579128 17.0826 0.822006L9.53991 8.36467L1.99725 0.822006C1.74465 0.585132 1.4098 0.455826 1.06356 0.461449C0.717312 0.467071 0.386838 0.607181 0.142061 0.852131C-0.102716 1.09708 -0.242592 1.42765 -0.247969 1.7739C-0.253347 2.12015 -0.123804 2.45491 0.113248 2.70734L7.65458 10.25L0.111915 17.7927C-0.0154319 17.9157 -0.117008 18.0628 -0.186886 18.2255C-0.256765 18.3881 -0.293547 18.5631 -0.295085 18.7401C-0.296624 18.9172 -0.262888 19.0928 -0.195847 19.2566C-0.128806 19.4205 -0.0298018 19.5693 0.0953885 19.6945C0.220579 19.8197 0.369448 19.9187 0.53331 19.9858C0.697172 20.0528 0.872744 20.0865 1.04978 20.085C1.22682 20.0835 1.40178 20.0467 1.56445 19.9768C1.72713 19.9069 1.87425 19.8054 1.99725 19.678L9.53991 12.1353Z"
+                        fill="#275C8F" />
+                </svg>
+            </button>
+            <div class="flex flex-col justify-between h-full gap-y-6">
+                <div class="h-full overflow-hidden overflow-y-auto">
+                    <div class="container">
+                        <div class="flex flex-col gap-y-4">
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Обучение
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Направления
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li>
+                                                    <a href="./pages/therapy.html">
+                                                        Терапия идентичности
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/systemic-family.html">
+                                                        Системные семейные расстановки
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/prof-retraining.html">
+                                                        Программа проф. переподготовки
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Формы обучение
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li class="ml-4">
+                                                    <details class="details1">
+                                                        <summary
+                                                            class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                            Программа повышение
+                                                            <br /> квалификации
+                                                        </summary>
+                                                        <ul
+                                                            class="mt-2 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                            <li>
+                                                                <a href="./pages/therapy.html">
+                                                                    Терапия идентичности
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="./pages/systemic-family.html">
+                                                                    Системные семейные расстановки
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/thematic-seminars.html">
+                                                        Тематические семинары
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/webinars.html">
+                                                        Вебинары
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/programs-cities.html">
+                                                        Программы в других городах
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Психологическая помощь
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/group-programs.html">
+                                            Групповые программы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/consultations-and-recording.html">
+                                            Индивидуальные консультации
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Онлайн запись
+                                        </a>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Об институте
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/about-institute.html">
+                                            История института / Издательство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Сотрудники
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Отзывы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page-developing.html">
+                                            Лицензии на образовательную деятельность
+                                        </a>
+                                    </li>
+
+                                    <li class="ml-4">
+                                        <details class="details">
+                                            <summary
+                                                class="-ml-4 cursor-pointer font-medium uppercase text-[#222222] select-none">
+                                                Документы
+                                            </summary>
+                                            <ul
+                                                class="mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Устав
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Правила приема
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Порядок приема, приостановление приема
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Порядок контроля успеваемости
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Режим занятий
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Срок действия аккредитации образовательных программ
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Структура преподавателей и программ с электронной подписью
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./pages/page-developing.html">
+                                                        Этический кодекс ОППЛ+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+
+
+                                </ul>
+                            </details>
+                            <a class="cursor-pointer font-medium uppercase text-[#275C8F] select-none"
+                                href="/pages/schedule.html">
+                                Расписание
+                            </a>
+                            <details>
+                                <summary
+                                    class="details-summary cursor-pointer font-medium uppercase text-[#275C8F] select-none">
+                                    Контакты
+                                </summary>
+                                <ul
+                                    class="ml-4 mt-4 flex flex-col gap-y-3 text-[#222222] text-sm uppercase font-medium leading-4">
+                                    <li>
+                                        <a href="./pages/group-programs.html">
+                                            Контакты института
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://minobrnauki.gov.ru">
+                                            Министерство науки и высшего образования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://edu.gov.ru/">
+                                            Министерство просвещения
+                                        </a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div
+                        class="font-medium leading-5 text-[#2B5F93] pt-5 font-sans pb-6 border-y border-[#275C8F] flex flex-col gap-y-2">
+                        <div class="flex gap-2 items-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_416_246" transform="scale(0.02)" />
+                                    </pattern>
+                                    <image id="image0_416_246" width="50" height="50"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE9ElEQVR4nO1YS2wcRRAdh98Bwp/wB4mYeLd71wHlwAkMV2KE+BiUeKdqspYsQQAhhRtCKwEBEhPbUzUxmDsSJBARERJIZP7hAEgEkIiCIAc4ADJIxEFKjBMW1UzPfry9Py8WPsyTRhrN9HRXVb96VT2OkyBBggQJEiRIkGDJo3vQP197/l0a+HmNtFsBH9ZI0xr4ZHghTZtnb4VjXO7vyW9Z7iwF9OS3LFdIngaeUshzGrnYzmW+OaBcxv/FqXQ+uF4jj2rkY1WGAX2jkEYywPekcuOZ7PqJi9YMT54ll9xnPc5qj+7VSM9ppE8U0qmK749p4Be1t/3aRXfgpg3+ZQrY18izVdEFfronz1e1O9+qdZOXRk5VzXVSAY3Ju0VxQgOBBv4jWpD+qaDSzs5mLnYppLcjqtEpmdus8bvGwP1PaaSQ3i3Thz/NIK2VXVFAf8t763ducLdC/lAh/xVeQB+IGNjGqlzQLYFRyHPR3PRRxS7tVe74dR05oV16UAPPxBGSpIwiyMMRDehV63dILzRI8M1WZ5BeD8e49HA0R+CGqhfRbSYNwQNtO9DXVzjTJHOcxPszQ+OXlwwFesc8X2fbiaaK5XL//O8yQDkTnH3xs97cxIoyG4TONCK2teTEahy7MKSB4axCesopFJZVR49/jhb1V87/XujUguy+XxMAb/xGE5yfql4UCss08pMlhQOeEhsbOpEaHL1SJNREYFqDf4dtXFTguNibGzm35h3S8aY7AjxTE4CB4DyzIyesayLfHlNNAR9SGFxhdUISSiEfNRE7mnJ5VT2H47yxFbGFOiJz6TrvYohNJRuBfqypOeKdBv7eROSrut6WjT0iY23OxrRs4sjU/O+y+bEeE+3DzVnDhwxrjlTZqpA+MznxdcrlSxpNFDnCe+sle9hvNXFEJLYmAOgPGkf2NFtfiqXYasYfLE8CfNAs8m2lOtWDQt5oKPhanfebGyT6M9bgAO+Idit4qNn6YqPYWutIBbUU0neyfY0myg7615jKPpvdMHGD1TCX+0Wdopyh40In206E6+eC7rDAIs+thpeubrS2tEJRF22hVinZJYHMgHoGlgwFfsXQ6w2nQyikXWbHXm68pr+yHHD+oW6DGSaS4Z5IXdqjWxtFJlYvhbRpoU5o4CdMQP5sJDIZ1++L+q/WBCksiEIDE6HZDNJj0pZYjYgOUqdN4dy0ECfCQgd8uh7tHKfYpZEfr+i4D6wZnryg9RZFzgblRnGPtPC2sQroETHEjHvTVu3tTaKhUxgI3mgb15ubWBG3Q2GLArx1YGDHGU5HTSPQL9LK23ZHErvikDUrCqQ8Xp9BSknFliu8jyR2p3TNMZ3sO1HskgZVAf8aF0nl8YDTCcJckHN2uYH8PJ0LbrFqO7DfypE3GkOTNnVMu/7NclQoF0/aV++osCCYttokm1CJdqchuG3+OJFPqQVCCZHyWH7lXigq72wSK72UkgOWoamIjXTEzmIgOpryaNw0GsX6IuP5eTW07eJ255MuQiMNKeQvK3bghEba1kqH0TFEv40YlH4+hLwH/lgBPauR78vA9l4xRg0Uzu5+1D9H7uWZAv/+qPLLz4cyDUP5Bd7arCAu3u+gMClpf5zA7VzyjUJ+T0REBMFZCjDKtFaiLdIa5gTSb/EPOrk3z3bJmLQX3LlkjE+QIEGCBAkSJEjgNMK/MFD1hMhdVZgAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                            <p>Версия для слабовидящих</p>
+                        </div>
+                        <div class="flex ml-1.5 font-sans gap-3 items-center">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 10C12.614 10 14.733 7.98528 14.733 5.5C14.733 3.01472 12.614 1 10 1C7.38603 1 5.26699 3.01472 5.26699 5.5C5.26699 7.98528 7.38603 10 10 10Z"
+                                    stroke="#2B5F93" stroke-width="1.71429" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M19 19C18.3886 17.1874 17.1876 15.6061 15.5701 14.4843C13.9526 13.3624 12.0021 12.7579 10 12.7579C7.99786 12.7579 6.04743 13.3624 4.42993 14.4843C2.81242 15.6061 1.61139 17.1874 1 19H19Z"
+                                    stroke="#2B5F93" stroke-width="1.71429" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <p>Личный кабинет</p>
+                        </div>
+                    </div>
+                    <div class="pt-2.5 flex flex-col gap-y-1 text-lg font-medium gap-x-4">
+                        <a href="tel:+78123132151">+7 (812) 313-21-51</a>
+                        <a href="tel:+79522000007">+7 (952) 200-00-07</a>
+                        <a href="mailto:istok_spb@mail.ru">istok_spb@mail.ru</a>
+                    </div>
+                    <div class="flex mt-6 gap-4">
+                        <a target="_blank" href="https://vk.com/istok_spb?ysclid=lkwktxyqi6679740862">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0456 40 40 31.0456 40 20C40 8.9544 31.0456 0 20 0C8.9544 0 0 8.9544 0 20C0 31.0456 8.9544 40 20 40ZM10 13.6C10.1624 21.3952 14.06 26.08 20.8932 26.08H21.2804V21.62C23.7916 21.87 25.69 23.7064 26.4524 26.08H30C29.0256 22.532 26.4648 20.5708 24.8656 19.8212C26.4648 18.8968 28.7132 16.648 29.2504 13.6H26.0272C25.3276 16.0736 23.2544 18.322 21.2804 18.5344V13.6H18.0576V22.2444C16.0588 21.7448 13.5352 19.3216 13.4224 13.6H10Z"
+                                    fill="#275C8F" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://wa.me/79522000007">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95432 31.0457 0 20 0C8.95432 0 0 8.95432 0 20C0 31.0457 8.95432 40 20 40ZM27.905 11.5971C25.8469 9.5364 23.1096 8.40108 20.1933 8.4C14.1846 8.4 9.29384 13.2901 9.29168 19.3009C9.29096 21.2223 9.79292 23.0978 10.7467 24.7508L9.2 30.4L14.9791 28.8842C16.5713 29.7529 18.3643 30.2105 20.1886 30.2112H20.1929C26.2012 30.2112 31.092 25.3204 31.0945 19.31C31.0963 16.3966 29.9636 13.6578 27.905 11.5971ZM25.1634 21.5835C24.891 21.4471 23.552 20.7883 23.302 20.6974C23.0525 20.6064 22.8706 20.561 22.6891 20.8338C22.5076 21.1066 21.9856 21.7199 21.8266 21.9018C21.6677 22.0837 21.5087 22.1062 21.2366 21.9698C21.1921 21.9475 21.1313 21.9212 21.0564 21.8887C20.6728 21.7223 19.9162 21.3942 19.046 20.6177C18.2363 19.8953 17.6896 19.0034 17.5306 18.7309C17.3716 18.4581 17.5135 18.3108 17.6499 18.175C17.7317 18.0935 17.8256 17.9791 17.9195 17.8648C17.9663 17.8078 18.0131 17.7507 18.0584 17.6978C18.1738 17.563 18.224 17.4606 18.2921 17.322C18.3043 17.2971 18.317 17.271 18.3309 17.2435C18.4218 17.0616 18.3764 16.9026 18.3083 16.7662C18.2629 16.6751 18.0047 16.0467 17.7706 15.4769C17.6542 15.1936 17.5438 14.9248 17.4684 14.7437C17.2731 14.2748 17.0753 14.276 16.9165 14.277C16.8954 14.2771 16.875 14.2772 16.8554 14.2762C16.6968 14.2682 16.515 14.2668 16.3334 14.2668C16.1519 14.2668 15.8569 14.3348 15.607 14.6076C15.5909 14.6252 15.5729 14.6444 15.5534 14.6653C15.2695 14.9684 14.6536 15.6259 14.6536 16.8801C14.6536 18.2176 15.6248 19.5099 15.765 19.6964L15.766 19.6978C15.7748 19.7096 15.7907 19.7324 15.8133 19.7648C16.1385 20.2313 17.8646 22.7076 20.4192 23.8108C21.0693 24.0916 21.5764 24.259 21.9721 24.3845C22.6247 24.5918 23.2184 24.5627 23.688 24.4925C24.2114 24.4143 25.2995 23.8338 25.5264 23.1975C25.7534 22.5613 25.7534 22.0157 25.6854 21.9022C25.6306 21.8103 25.5018 21.748 25.311 21.6558C25.2653 21.6337 25.216 21.6099 25.1634 21.5835Z"
+                                    fill="#2B5F93" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://t.me/istokspb">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 40C31.0456 40 40 31.0456 40 20C40 8.9544 31.0456 0 20 0C8.9544 0 0 8.9544 0 20C0 31.0456 8.9544 40 20 40ZM28.7908 12.7776C28.9452 11.0256 27.0948 11.7472 27.0948 11.7472C25.7288 12.3128 24.32 12.8872 22.896 13.468C18.48 15.2692 13.9184 17.13 10.0324 18.9616C7.9252 19.7344 9.1588 20.5072 9.1588 20.5072L12.4992 21.538C14.0412 22.002 14.8632 21.4864 14.8632 21.4864L22.0584 16.5912C24.628 14.8392 24.0112 16.282 23.3944 16.9004L17.9984 22.0532C17.176 22.7748 17.5872 23.3932 17.9468 23.7024C18.9668 24.602 21.4748 26.248 22.5696 26.9664C22.8544 27.1532 23.0436 27.2776 23.0864 27.3096C23.3432 27.5156 24.7308 28.4432 25.656 28.2372C26.5812 28.0308 26.684 26.8456 26.684 26.8456L27.9172 18.7552C28.102 17.3508 28.3144 16.0008 28.484 14.9224C28.644 13.904 28.766 13.1284 28.7908 12.7776Z"
+                                    fill="#2B5F93" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-page overflow-hidden">
+        <div class="container">
+            <div class="relative">
+                <div class="pt-20 lg:pt-12 py-20">
+                    <h1
+                        class="max-w-[764px] w-full uppercase text-2xl leading-8 tracking-[0.5px] lg:tracking-normal lg:text-4xl lg:leading-[54px] text-[#275C8F]">
+                        ПРИВЕТСТВУЕМ ВАС НА САЙТЕ
+                        <br />
+                        Санкт-Петербургского Института
+                        Системной Травматерапии «Исток»
+                    </h1>
+                    <div class="flex flex-col-reverse lg:flex-row lg:justify-between mt-4 gap-6 lg:gap-24">
+                        <div>
+                            <p class="text-base leading-6 lg:text-xl lg:leading-9 max-w-[550px]">С 2004 года
+                                мы организуем и проводим
+                                программы
+                                дополнительного
+                                образования и повышения квалификации для психологов, ведём консультационную
+                                и психотерапевтическую деятельность и способствуем расширению профессионального
+                                сообщества, благодаря созданию международных семинаров и издательской деятельности.</p>
+                        </div>
+                        <div class="lg:w-[550px]">
+                            <!-- <video autoplay="autoplay" onloadstart="this.volume=0" loop="loop" playsinline controls
+                                disablepictureinpicture controlslist="nodownload noplaybackrate">
+                                <source src="https://youtu.be/_hdvA9dj4Jo" />
+                            </video> -->
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_hdvA9dj4Jo"
+                                title="Видос" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute right-[-100px] lg:right-[-50px] bottom-0 z-[-1]">
+                    <img class="w-[380px] lg:w-[660px]" alt="big graphic element"
+                        src="./images/big-graphic-element.png" />
+                </div>
+                <div class="absolute left-[-100px] lg:left-[285px] bottom-0 z-[-2]">
+                    <img class="w-[240px] lg:w-[370px]" alt="small graphic element"
+                        src="./images/small-graphic-element.png" />
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#275C8FCC] pt-10 pb-20 lg:py-16">
+            <article class="container">
+                <h2
+                    class="text-white text-lg leading-[1.463rem] lg:text-[28px] uppercase lg:leading-[64px] text-center">
+                    Почему на протяжении многих лет студенты выбирают нас:
+                </h2>
+                <div class="mt-12">
+                    <div
+                        class="flex flex-col gap-5 lg:gap-0 lg:flex-row justify-between text-xs lg:text-lg text-white leading-[21.9px] lg:leading-7 text-center font-sans">
+                        <section class="flex flex-col items-center gap-y-2 lg:gap-y-7 lg:max-w-[270px] w-full">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.01961 35C3.01961 17.3377 17.3377 3.01961 35 3.01961C52.6623 3.01961 66.9804 17.3377 66.9804 35C66.9804 52.6623 52.6623 66.9804 35 66.9804C17.3377 66.9804 3.01961 52.6623 3.01961 35ZM35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0ZM63.7103 31.1372L34.7271 18.3906L5.44529 31.2014L10.4313 35.0876V46.6979C9.49338 47.2048 9.05617 48.4321 9.65014 49.4608L10.3464 50.6667C11.1162 52.0001 13.0407 52.0001 13.8105 50.6667L14.5067 49.4608C15.1559 48.3363 14.5731 46.9746 13.451 46.5758L13.451 37.4411L16.1961 39.5807V44.661L17.306 44.9658L17.7059 43.5099C17.306 44.9658 17.3062 44.9658 17.3064 44.9659L17.307 44.966L17.3395 44.9749L17.4308 44.9996C17.5104 45.021 17.627 45.0521 17.777 45.0916C18.0771 45.1704 18.5115 45.2826 19.0532 45.4172C20.1359 45.6862 21.6503 46.0454 23.3789 46.4067C26.8084 47.1234 31.1848 47.8709 34.7122 47.902C38.4334 47.9348 43.057 47.1866 46.6813 46.4545C48.5082 46.0855 50.1089 45.7147 51.2536 45.436C51.8262 45.2966 52.2855 45.1801 52.6028 45.0981C52.7614 45.0571 52.8846 45.0247 52.9688 45.0024L53.0654 44.9767L53.0997 44.9674L53.1003 44.9673C53.1006 44.9672 53.1007 44.9672 52.7059 43.5099L53.1007 44.9672L54.2157 44.6651V39.5241L63.7103 31.1372ZM19.2157 42.3445V40.5908C20.2978 40.7437 21.81 40.9479 23.533 41.1531C26.9636 41.5619 31.289 41.9825 34.7177 42.0001C38.3383 42.0186 42.9079 41.5977 46.5326 41.1802C48.3535 40.9704 49.9517 40.7596 51.0952 40.6012L51.1961 40.5872V42.34C50.9995 42.3892 50.7799 42.4436 50.5393 42.5021C49.4238 42.7737 47.8628 43.1352 46.0834 43.4947C42.4953 44.2194 38.1288 44.9124 34.7388 44.8825C31.5252 44.8542 27.3918 44.1605 23.9967 43.4509C22.3131 43.0991 20.8364 42.7488 19.7813 42.4867C19.5762 42.4357 19.3871 42.3881 19.2157 42.3445ZM58.1721 32.0003L54.2157 35.4951V33.1439L53.0829 32.8518L52.7059 34.3138C53.0829 32.8518 53.0827 32.8518 53.0825 32.8517L53.0819 32.8516L53.0476 32.8428L52.9512 32.8184C52.8671 32.7972 52.7439 32.7663 52.5853 32.7273C52.268 32.6493 51.8087 32.5384 51.2361 32.4057C50.0914 32.1404 48.4907 31.7875 46.6644 31.4362C43.0398 30.7392 38.422 30.0278 34.7128 30.059C31.1972 30.0885 26.8263 30.7993 23.3964 31.4817C21.6682 31.8256 20.1539 32.1675 19.071 32.4236C18.5293 32.5517 18.0949 32.6585 17.7948 32.7335C17.6448 32.771 17.5283 32.8006 17.4487 32.821L17.3575 32.8444L17.3245 32.853C17.3243 32.853 17.3241 32.8531 17.7059 34.3138L17.3241 32.8531L16.1961 33.1479V35.7522L11.2998 31.936L34.7239 21.688L58.1721 32.0003ZM51.1961 37.538V35.498C51.0034 35.4521 50.7888 35.4016 50.5545 35.3473C49.4376 35.0885 47.875 34.744 46.0941 34.4015C42.5042 33.7111 38.1318 33.0499 34.7382 33.0785C31.5215 33.1055 27.3826 33.7674 23.9857 34.4433C22.3006 34.7786 20.8223 35.1123 19.7659 35.3621C19.5669 35.4092 19.3831 35.4532 19.2157 35.4937V37.5407C19.3475 37.5597 19.4883 37.5798 19.6374 37.6008C20.7031 37.7514 22.1934 37.9526 23.8902 38.1547C27.3 38.561 31.4844 38.9639 34.7332 38.9805C38.1638 38.9981 42.5843 38.5955 46.1871 38.1804C47.9799 37.9739 49.5547 37.7662 50.6808 37.6102C50.8649 37.5846 51.037 37.5605 51.1961 37.538Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Опираемся на традиции лучших Ленинградских психотерапевтических школ, развиваем
+                                    и обогащаем собственные направления и методы работы, благодаря сотрудничеству
+                                    с коллегами из разных стран и различных модальностей.</h4>
+                            </div>
+                        </section>
+                        <section class="flex flex-col items-center gap-y-2 lg:gap-y-7 lg:max-w-[270px] w-full">
+                            <div>
+                                <svg width="65" height="71" viewBox="0 0 65 71" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.9842 7.39203C10.9842 5.25095 12.7199 3.51526 14.8609 3.51526C17.002 3.51526 18.7377 5.25095 18.7377 7.39203C18.7377 9.53311 17.002 11.2688 14.8609 11.2688C12.7199 11.2688 10.9842 9.53311 10.9842 7.39203ZM14.8609 0.5C11.0546 0.5 7.96891 3.58567 7.96891 7.39203C7.96891 11.1984 11.0546 14.2841 14.8609 14.2841C18.6673 14.2841 21.753 11.1984 21.753 7.39203C21.753 3.58567 18.6673 0.5 14.8609 0.5ZM47.1674 34.9602C47.1674 29.6413 44.8721 24.8585 41.218 21.5483L46.2046 14.6027C47.03 14.9522 47.9376 15.1456 48.8904 15.1456C52.6967 15.1456 55.7824 12.0599 55.7824 8.25354C55.7824 4.44717 52.6967 1.3615 48.8904 1.3615C45.084 1.3615 41.9983 4.44717 41.9983 8.25354C41.9983 10.0184 42.6617 11.6284 43.7527 12.8476L38.8219 19.7155C36.009 17.9134 32.6644 16.8686 29.0758 16.8686C28.6958 16.8686 28.3185 16.8803 27.944 16.9035L25.5731 14.7149H19.5054L14.9027 18.3587L10.6836 14.7149H4.20942L0 18.0825V39.2678H1.50763C0 39.2678 0 39.269 2.05399e-06 39.2703L8.21595e-06 39.2728L3.39935e-05 39.278L0.00014419 39.2891L0.000643 39.3139C0.00111583 39.3314 0.00189265 39.3513 0.00310994 39.3732C0.00554145 39.4169 0.00974966 39.4694 0.016881 39.5293C0.0310901 39.6487 0.0572519 39.8005 0.10548 39.9742C0.202141 40.3221 0.390359 40.7666 0.753267 41.2021C1.52022 42.1225 2.81097 42.7138 4.73827 42.7138C5.30482 42.7138 5.82091 42.5551 6.24591 42.3625V66.1898L6.24591 66.1903L6.24593 66.1993L6.24614 66.2206C6.24638 66.2362 6.24682 66.2547 6.24759 66.276C6.24914 66.3185 6.25202 66.3721 6.2573 66.4354C6.26781 66.5615 6.2881 66.7289 6.32743 66.9245C6.40506 67.3105 6.56339 67.8385 6.89383 68.3776C7.6143 69.553 8.9793 70.4973 11.1996 70.4973C12.7047 70.4973 13.7777 69.9092 14.5048 69.182C15.3122 69.9421 16.4986 70.5528 18.1433 70.4964C20.2074 70.4256 21.4312 69.4072 22.0517 68.2761C22.3376 67.755 22.4746 67.252 22.5422 66.8873C22.5765 66.7021 22.5944 66.5441 22.6038 66.4256C22.6086 66.3661 22.6112 66.3158 22.6127 66.2762L22.6137 66.2467L22.6142 66.2247L22.6144 66.2051L22.6145 66.1969L22.6145 66.1932L22.6145 66.1915C22.6145 66.1906 22.6145 66.1898 21.1069 66.1898H22.6145V51.8634C24.6223 52.6313 26.8012 53.0518 29.0758 53.0518C32.1522 53.0518 35.0494 52.2839 37.5859 50.9293L41.8242 56.8327C40.5999 58.0767 39.8446 59.7835 39.8446 61.6668C39.8446 65.4732 42.9302 68.5588 46.7366 68.5588C50.543 68.5588 53.6286 65.4732 53.6286 61.6668C53.6286 57.8604 50.543 54.7748 46.7366 54.7748C45.9016 54.7748 45.1013 54.9233 44.3606 55.1953L40.1209 49.29C43.3727 46.7798 45.7464 43.1875 46.7026 39.0524H51.2095C51.8972 42.1336 54.6477 44.4367 57.9362 44.4367C61.7425 44.4367 64.8282 41.3511 64.8282 37.5447C64.8282 33.7383 61.7425 30.6527 57.9362 30.6527C54.6476 30.6527 51.897 32.9558 51.2095 36.0371H47.1358C47.1568 35.6808 47.1674 35.3217 47.1674 34.9602ZM44.1521 34.9602C44.1521 26.7057 37.5183 20.0005 29.2911 19.8854V39.6585L29.1014 40L27.7835 39.2678C29.1014 40 29.1011 40.0005 29.1008 40.0011L29.0988 40.0047L29.0957 40.0102L29.0882 40.0234C29.0826 40.0331 29.0758 40.0447 29.0679 40.0581C29.052 40.085 29.0313 40.119 29.0058 40.1592C28.9549 40.2394 28.8841 40.3452 28.7931 40.468C28.6126 40.7117 28.3443 41.0337 27.9844 41.3576C27.2661 42.0041 26.1147 42.7138 24.5529 42.7138C23.8481 42.7138 23.1866 42.5136 22.6145 42.2474V48.586C24.5713 49.5158 26.7609 50.0365 29.0758 50.0365C37.4022 50.0365 44.1521 43.2866 44.1521 34.9602ZM3.01526 39.1811C3.02257 39.2011 3.03793 39.2337 3.06966 39.2718C3.11037 39.3207 3.43493 39.6985 4.73827 39.6985C4.75458 39.6985 4.87129 39.6873 5.10259 39.5667C5.32254 39.4519 5.56387 39.2812 5.80306 39.081C5.96926 38.9418 6.12009 38.8005 6.24591 38.6755V26.776H9.26117V34.9603H19.5992V26.776H22.6145V38.6335C22.7507 38.7553 22.9142 38.8926 23.0963 39.0283C23.6894 39.4706 24.2164 39.6985 24.5529 39.6985C25.1448 39.6985 25.6088 39.439 25.9673 39.1164C26.0913 39.0047 26.1946 38.8922 26.2759 38.7937V19.4671L24.3942 17.7302H20.5545L14.8192 22.2707L9.56177 17.7302H5.26712L3.01526 19.5317V39.1811ZM19.5992 37.9755H9.26117V66.1719L9.26213 66.1848C9.26439 66.2119 9.27007 66.2632 9.28352 66.3301C9.31146 66.469 9.36596 66.641 9.46458 66.8018C9.60222 67.0264 9.96023 67.4821 11.1996 67.4821C11.9859 67.4821 12.3612 67.1346 12.603 66.7647C12.7386 66.5573 12.8283 66.3391 12.8835 66.1671C12.9004 66.1142 12.9132 66.0684 12.9226 66.032V42.4984H15.9378V65.9738C15.949 66.006 15.9627 66.0432 15.979 66.0843C16.051 66.2652 16.1656 66.498 16.3332 66.7199C16.6381 67.1236 17.118 67.5146 18.0399 67.4829C18.991 67.4503 19.2749 67.0688 19.4082 66.8258C19.4992 66.6599 19.5506 66.4823 19.5773 66.3382C19.5901 66.269 19.5958 66.2155 19.5981 66.1861L19.5992 66.17V37.9755ZM48.8904 4.37677C46.7493 4.37677 45.0136 6.11246 45.0136 8.25354C45.0136 10.3946 46.7493 12.1303 48.8904 12.1303C51.0315 12.1303 52.7671 10.3946 52.7671 8.25354C52.7671 6.11246 51.0315 4.37677 48.8904 4.37677ZM42.8598 61.6668C42.8598 59.5257 44.5955 57.79 46.7366 57.79C48.8777 57.79 50.6134 59.5257 50.6134 61.6668C50.6134 63.8079 48.8777 65.5436 46.7366 65.5436C44.5955 65.5436 42.8598 63.8079 42.8598 61.6668ZM54.0594 37.5447C54.0594 35.4036 55.7951 33.6679 57.9362 33.6679C60.0772 33.6679 61.8129 35.4036 61.8129 37.5447C61.8129 39.6858 60.0772 41.4215 57.9362 41.4215C55.7951 41.4215 54.0594 39.6858 54.0594 37.5447Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>
+                                    Обеспечиваем практическую направленность образовательных программ.
+                                </h4>
+                            </div>
+                        </section>
+                        <section class="flex flex-col items-center gap-y-2 lg:gap-y-7 lg:max-w-[270px] w-full">
+                            <div>
+                                <svg width="68" height="71" viewBox="0 0 68 71" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.4546 4.24026C33.5115 3.01111 27.9613 2.42502 21.711 4.22983C16.2993 5.7925 13.2075 7.29027 9.38328 11.2726C5.93641 14.862 4.45611 17.5174 3.19664 22.3341C1.94359 27.1263 2.34074 30.0931 3.216 35.1733C3.90974 39.1998 5.15608 42.8891 6.3232 45.0016C7.25692 46.6916 8.87476 49.2526 10.2747 51.413C10.9715 52.4884 11.6091 53.4565 12.0725 54.1557C12.3042 54.5053 12.4922 54.7875 12.6222 54.9822L12.7719 55.206L12.8235 55.2829L12.8236 55.2832L13.0064 55.5552V70.936H10.8559V56.2095L10.8339 56.1764C10.7026 55.9799 10.5132 55.6956 10.28 55.3437C9.81367 54.64 9.17187 53.6655 8.47001 52.5824C7.07256 50.4258 5.41585 47.8062 4.44092 46.0416C3.12384 43.6576 1.81739 39.7209 1.09677 35.5384C0.209116 30.3863 -0.257437 27.0432 1.11614 21.7901C2.4679 16.6204 4.12947 13.639 7.8322 9.78315C11.9902 5.45318 15.454 3.79825 21.1144 2.16379C27.8469 0.219744 33.8053 0.868213 38.9735 2.15336L39.1979 2.20914C44.1312 3.43528 47.5779 4.29192 51.5648 7.97904C53.2604 9.54713 54.7946 11.9724 55.8791 13.9242C56.4294 14.9147 56.8793 15.8117 57.1917 16.4615C57.3481 16.7867 57.4705 17.0508 57.5543 17.2348C57.5962 17.3267 57.6285 17.3987 57.6505 17.4484L57.6759 17.5057L57.6828 17.5213L57.6847 17.5257L57.6853 17.5271L57.6855 17.5275C57.6855 17.5277 57.6856 17.5278 56.6996 17.9567L57.6856 17.5278L57.723 17.6137L59.6625 25.6627L66.0957 36.6087L66.1246 36.6467C66.1707 36.7077 66.2347 36.7942 66.3106 36.9015C66.4616 37.115 66.6638 37.4165 66.8674 37.7684C67.2448 38.4207 67.7451 39.4411 67.7451 40.4387C67.7451 42.0312 67.3312 43.0665 66.6841 43.6921C66.3677 43.9979 66.0355 44.1645 65.7625 44.2525C65.6396 44.2921 65.5298 44.3155 65.4396 44.3292L59.7298 46.2893V55.9871L59.7098 56.0895L58.6546 55.8828C59.7098 56.0895 59.7097 56.0897 59.7097 56.0899L59.7096 56.0903L59.7094 56.0913L59.7088 56.0944L59.7069 56.104L59.7002 56.1368C59.6944 56.1647 59.6862 56.2042 59.6753 56.2543C59.6535 56.3542 59.6214 56.4964 59.5789 56.6708C59.494 57.0186 59.3662 57.4995 59.1944 58.0329C58.8638 59.0587 58.3227 60.4338 57.515 61.3734C56.4944 62.5607 54.7991 63.3461 53.5197 63.8212C52.8533 64.0687 52.2442 64.2515 51.8018 64.3726C51.58 64.4333 51.3986 64.4789 51.2709 64.5097C51.207 64.5251 51.1565 64.5369 51.121 64.5449L51.0889 64.5522L51.0792 64.5543L51.0671 64.557L51.0633 64.5578L51.062 64.5581L51.0615 64.5582C51.0613 64.5583 51.0611 64.5583 50.8466 63.5622L51.0611 64.5583L50.9492 64.5824H44.4812V70.936H42.3307V62.4319H50.7134L50.7666 62.4192C50.8755 62.393 51.0356 62.3528 51.2341 62.2985C51.6323 62.1895 52.1785 62.0253 52.771 61.8053C54.0095 61.3454 55.2466 60.7134 55.8842 59.9716C56.3935 59.3791 56.8298 58.3594 57.1476 57.3734C57.2998 56.9008 57.4139 56.4716 57.4898 56.1608C57.5276 56.0059 57.5556 55.8815 57.5739 55.7974L57.5794 55.7722V44.7539L65.0243 42.1982H65.1202C65.1354 42.1903 65.1596 42.1748 65.1895 42.146C65.2754 42.0629 65.5947 41.6809 65.5947 40.4387C65.5947 40.0526 65.3618 39.4602 65.0061 38.8455C64.8432 38.564 64.6789 38.3185 64.555 38.1434C64.4934 38.0564 64.4429 37.9882 64.4088 37.943C64.3917 37.9205 64.3789 37.9038 64.3709 37.8935L64.3627 37.8831L64.3624 37.8827L64.3622 37.8824L64.3617 37.8818L64.3616 37.8816L64.3152 37.8233L57.6467 26.4769L55.677 18.3029C55.6578 18.2597 55.6311 18.2003 55.5973 18.1262C55.5191 17.9544 55.403 17.7039 55.2537 17.3935C54.9549 16.7721 54.5245 15.9139 53.9993 14.9687C52.9326 13.0489 51.5344 10.88 50.1047 9.55783C46.5245 6.24682 43.5489 5.50693 38.5478 4.26344L38.4546 4.24026ZM23.4543 24.7011H18.7735V22.5507H27.2775V31.0548H25.1271V26.0696L17.2095 33.9872L15.6889 32.4666L23.4543 24.7011ZM38.714 24.2124L46.6316 32.13H41.6464V34.2804H50.1505V25.7764H48V30.4572L40.2346 22.6918L38.714 24.2124ZM28.9057 43.5509L32.2156 46.8608L30.695 48.3814L24.6817 42.3682L30.695 36.3549L32.2156 37.8755L28.6906 41.4005H39.8877V43.5509H28.9057ZM29.9167 13.0692H35.3906V18.543H29.9167V13.0692ZM27.7663 20.6935V10.9187H37.541V20.6935H27.7663ZM19.5555 39.2656H14.0816V44.7394H19.5555V39.2656ZM11.9311 37.1151V46.8899H21.7059V37.1151H11.9311ZM45.7518 39.2656H51.2257V44.7394H45.7518V39.2656ZM43.6014 46.8899V37.1151H53.3762V46.8899H43.6014Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Используем в обучении индивидуальный подход в сочетании с разнообразными формами
+                                    обучения.</h4>
+                            </div>
+                        </section>
+                        <section class="flex flex-col items-center gap-y-2 lg:gap-y-7 lg:max-w-[270px] w-full">
+                            <div>
+                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="path-1-inside-1_801_280" fill="white">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.0933 12.4155C17.7823 12.4155 19.9622 10.2357 19.9622 7.54667C19.9622 4.8577 17.7823 2.67785 15.0933 2.67785C12.4044 2.67785 10.2245 4.8577 10.2245 7.54667C10.2245 10.2357 12.4044 12.4155 15.0933 12.4155ZM15.0933 15.0933C19.2613 15.0933 22.64 11.7146 22.64 7.54667C22.64 3.37876 19.2613 0 15.0933 0C10.9254 0 7.54667 3.37876 7.54667 7.54667C7.54667 11.7146 10.9254 15.0933 15.0933 15.0933ZM42.9073 17.0568L42.1153 18.1364C42.9073 17.0568 42.9076 17.057 42.9078 17.0572L42.9096 17.0585L42.9128 17.0609L42.9217 17.0675L42.9493 17.0882C42.9719 17.1052 43.0028 17.1289 43.0408 17.1586C43.1167 17.218 43.2217 17.3022 43.346 17.4076C43.5927 17.6166 43.9258 17.9172 44.2626 18.2794C44.5954 18.6372 44.9595 19.0845 45.2444 19.589C45.5239 20.084 45.7796 20.7265 45.7667 21.4468C45.7542 22.1479 45.4897 22.768 45.2073 23.245C44.9192 23.7317 44.5575 24.1618 44.2282 24.5054C43.8949 24.8533 43.5673 25.1411 43.3249 25.3411C43.2028 25.4419 43.0998 25.5224 43.0253 25.5792C42.988 25.6076 42.9576 25.6302 42.9354 25.6466L42.9083 25.6665L42.8996 25.6728L42.8964 25.675L42.8946 25.6763C42.8944 25.6765 42.8941 25.6767 42.1153 24.5876L42.8941 25.6767L42.5448 25.9265H23.7355V66.6621L23.468 67.019L22.3966 66.216C23.468 67.019 23.4678 67.0192 23.4676 67.0195L23.4672 67.02L23.4664 67.0212L23.4641 67.0242L23.4577 67.0326L23.4375 67.059C23.4279 67.0714 23.4162 67.0866 23.4024 67.1041C23.3922 67.1171 23.3808 67.1315 23.3684 67.1471C23.3101 67.2204 23.2273 67.3221 23.1237 67.4432C22.9179 67.6837 22.6228 68.0091 22.2675 68.3441C21.9155 68.676 21.4817 69.039 20.997 69.3382C20.5219 69.6315 19.9225 69.9106 19.2516 69.9818C18.4558 70.0664 17.7116 69.8437 17.1168 69.5697C16.512 69.2912 15.9609 68.913 15.5116 68.558C15.3243 68.41 15.1491 68.2616 14.9891 68.1194C14.8689 68.2298 14.7401 68.3438 14.604 68.4582C14.1974 68.8 13.6988 69.1682 13.1487 69.4562C12.6086 69.739 11.9339 69.9893 11.1983 69.9893C10.4627 69.9893 9.78799 69.739 9.2479 69.4562C8.69773 69.1682 8.19921 68.8 7.79254 68.4582C7.38197 68.1131 7.0378 67.7719 6.79707 67.5184C6.67588 67.3908 6.57887 67.2833 6.51056 67.2058C6.47636 67.1669 6.44923 67.1355 6.42972 67.1126L6.40622 67.0849L6.39886 67.0761L6.3963 67.0731L6.3953 67.0719L6.39487 67.0714C6.39468 67.0711 6.3945 67.0709 7.42495 66.216L6.3945 67.0709L6.08603 66.6991V47.8456C6.03095 47.8806 5.97506 47.9147 5.91839 47.9476C5.38378 48.2579 4.66691 48.5318 3.85829 48.4354C3.16711 48.353 2.59377 48.0203 2.17059 47.6911C1.73883 47.3552 1.37424 46.9533 1.09061 46.5958C0.803113 46.2334 0.572402 45.883 0.414381 45.6255C0.334653 45.4957 0.271642 45.3865 0.227386 45.3076C0.20522 45.2681 0.187649 45.236 0.174929 45.2124L0.159482 45.1836L0.154524 45.1742L0.152745 45.1708L0.152031 45.1694L0.151719 45.1688C0.151575 45.1685 0.151436 45.1683 1.33893 44.5497L0.151436 45.1683L0 44.8775V22.4506L5.65315 16.7975H10.8256L15.1612 23.404L18.9536 17.0491L42.5473 16.7927L42.9073 17.0568ZM2.67785 44.194L2.69655 44.2246C2.81632 44.4197 2.98591 44.6762 3.18843 44.9315C3.39482 45.1916 3.60997 45.4181 3.81489 45.5775C4.02839 45.7436 4.14868 45.7732 4.17526 45.7764C4.19266 45.7784 4.31482 45.7821 4.57411 45.6316C4.82614 45.4853 5.10418 45.2523 5.38061 44.9681C5.65105 44.69 5.88438 44.4001 6.05196 44.1757L6.08603 44.1297V28.6043H8.76388V65.7007C8.95469 65.9001 9.21529 66.1559 9.51547 66.4082C9.83293 66.675 10.1681 66.9154 10.4899 67.0838C10.8217 67.2575 11.0571 67.3115 11.1983 67.3115C11.3395 67.3115 11.5749 67.2575 11.9067 67.0838C12.2284 66.9154 12.5637 66.675 12.8811 66.4082C13.1813 66.1559 13.4419 65.9001 13.6327 65.7007V48.3231H16.3106V65.6852C16.5268 65.9024 16.827 66.1845 17.1718 66.4569C17.524 66.7353 17.891 66.9781 18.237 67.1374C18.5929 67.3014 18.8322 67.3335 18.9687 67.319C19.0919 67.3059 19.3004 67.2385 19.5904 67.0595C19.8708 66.8865 20.1593 66.6514 20.4304 66.3958C20.6813 66.1592 20.8979 65.9234 21.0577 65.7387V23.2486H41.6531C41.8356 23.0966 42.0668 22.8906 42.2946 22.6528C42.5401 22.3966 42.7548 22.1312 42.9029 21.881C43.0567 21.6212 43.0881 21.4631 43.0893 21.3989C43.0904 21.3346 43.0641 21.174 42.9126 20.9057C42.7665 20.6469 42.5506 20.3707 42.3017 20.103C42.0714 19.8554 41.8362 19.64 41.6499 19.4804L20.4838 19.7105L15.2689 28.449L9.37998 19.4753H6.76235L2.67785 23.5598V44.194ZM43.576 0H40.6547V3.5299H25.8048V6.20775H66.5811V46.3755H25.8048V49.0534H39.9086L31.1604 64.7553L33.4997 66.0587L42.4804 49.9394L51.4611 66.0587L53.8004 64.7553L45.0522 49.0534H69.259V3.5299H43.576V0Z" />
+                                    </mask>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.0933 12.4155C17.7823 12.4155 19.9622 10.2357 19.9622 7.54667C19.9622 4.8577 17.7823 2.67785 15.0933 2.67785C12.4044 2.67785 10.2245 4.8577 10.2245 7.54667C10.2245 10.2357 12.4044 12.4155 15.0933 12.4155ZM15.0933 15.0933C19.2613 15.0933 22.64 11.7146 22.64 7.54667C22.64 3.37876 19.2613 0 15.0933 0C10.9254 0 7.54667 3.37876 7.54667 7.54667C7.54667 11.7146 10.9254 15.0933 15.0933 15.0933ZM42.9073 17.0568L42.1153 18.1364C42.9073 17.0568 42.9076 17.057 42.9078 17.0572L42.9096 17.0585L42.9128 17.0609L42.9217 17.0675L42.9493 17.0882C42.9719 17.1052 43.0028 17.1289 43.0408 17.1586C43.1167 17.218 43.2217 17.3022 43.346 17.4076C43.5927 17.6166 43.9258 17.9172 44.2626 18.2794C44.5954 18.6372 44.9595 19.0845 45.2444 19.589C45.5239 20.084 45.7796 20.7265 45.7667 21.4468C45.7542 22.1479 45.4897 22.768 45.2073 23.245C44.9192 23.7317 44.5575 24.1618 44.2282 24.5054C43.8949 24.8533 43.5673 25.1411 43.3249 25.3411C43.2028 25.4419 43.0998 25.5224 43.0253 25.5792C42.988 25.6076 42.9576 25.6302 42.9354 25.6466L42.9083 25.6665L42.8996 25.6728L42.8964 25.675L42.8946 25.6763C42.8944 25.6765 42.8941 25.6767 42.1153 24.5876L42.8941 25.6767L42.5448 25.9265H23.7355V66.6621L23.468 67.019L22.3966 66.216C23.468 67.019 23.4678 67.0192 23.4676 67.0195L23.4672 67.02L23.4664 67.0212L23.4641 67.0242L23.4577 67.0326L23.4375 67.059C23.4279 67.0714 23.4162 67.0866 23.4024 67.1041C23.3922 67.1171 23.3808 67.1315 23.3684 67.1471C23.3101 67.2204 23.2273 67.3221 23.1237 67.4432C22.9179 67.6837 22.6228 68.0091 22.2675 68.3441C21.9155 68.676 21.4817 69.039 20.997 69.3382C20.5219 69.6315 19.9225 69.9106 19.2516 69.9818C18.4558 70.0664 17.7116 69.8437 17.1168 69.5697C16.512 69.2912 15.9609 68.913 15.5116 68.558C15.3243 68.41 15.1491 68.2616 14.9891 68.1194C14.8689 68.2298 14.7401 68.3438 14.604 68.4582C14.1974 68.8 13.6988 69.1682 13.1487 69.4562C12.6086 69.739 11.9339 69.9893 11.1983 69.9893C10.4627 69.9893 9.78799 69.739 9.2479 69.4562C8.69773 69.1682 8.19921 68.8 7.79254 68.4582C7.38197 68.1131 7.0378 67.7719 6.79707 67.5184C6.67588 67.3908 6.57887 67.2833 6.51056 67.2058C6.47636 67.1669 6.44923 67.1355 6.42972 67.1126L6.40622 67.0849L6.39886 67.0761L6.3963 67.0731L6.3953 67.0719L6.39487 67.0714C6.39468 67.0711 6.3945 67.0709 7.42495 66.216L6.3945 67.0709L6.08603 66.6991V47.8456C6.03095 47.8806 5.97506 47.9147 5.91839 47.9476C5.38378 48.2579 4.66691 48.5318 3.85829 48.4354C3.16711 48.353 2.59377 48.0203 2.17059 47.6911C1.73883 47.3552 1.37424 46.9533 1.09061 46.5958C0.803113 46.2334 0.572402 45.883 0.414381 45.6255C0.334653 45.4957 0.271642 45.3865 0.227386 45.3076C0.20522 45.2681 0.187649 45.236 0.174929 45.2124L0.159482 45.1836L0.154524 45.1742L0.152745 45.1708L0.152031 45.1694L0.151719 45.1688C0.151575 45.1685 0.151436 45.1683 1.33893 44.5497L0.151436 45.1683L0 44.8775V22.4506L5.65315 16.7975H10.8256L15.1612 23.404L18.9536 17.0491L42.5473 16.7927L42.9073 17.0568ZM2.67785 44.194L2.69655 44.2246C2.81632 44.4197 2.98591 44.6762 3.18843 44.9315C3.39482 45.1916 3.60997 45.4181 3.81489 45.5775C4.02839 45.7436 4.14868 45.7732 4.17526 45.7764C4.19266 45.7784 4.31482 45.7821 4.57411 45.6316C4.82614 45.4853 5.10418 45.2523 5.38061 44.9681C5.65105 44.69 5.88438 44.4001 6.05196 44.1757L6.08603 44.1297V28.6043H8.76388V65.7007C8.95469 65.9001 9.21529 66.1559 9.51547 66.4082C9.83293 66.675 10.1681 66.9154 10.4899 67.0838C10.8217 67.2575 11.0571 67.3115 11.1983 67.3115C11.3395 67.3115 11.5749 67.2575 11.9067 67.0838C12.2284 66.9154 12.5637 66.675 12.8811 66.4082C13.1813 66.1559 13.4419 65.9001 13.6327 65.7007V48.3231H16.3106V65.6852C16.5268 65.9024 16.827 66.1845 17.1718 66.4569C17.524 66.7353 17.891 66.9781 18.237 67.1374C18.5929 67.3014 18.8322 67.3335 18.9687 67.319C19.0919 67.3059 19.3004 67.2385 19.5904 67.0595C19.8708 66.8865 20.1593 66.6514 20.4304 66.3958C20.6813 66.1592 20.8979 65.9234 21.0577 65.7387V23.2486H41.6531C41.8356 23.0966 42.0668 22.8906 42.2946 22.6528C42.5401 22.3966 42.7548 22.1312 42.9029 21.881C43.0567 21.6212 43.0881 21.4631 43.0893 21.3989C43.0904 21.3346 43.0641 21.174 42.9126 20.9057C42.7665 20.6469 42.5506 20.3707 42.3017 20.103C42.0714 19.8554 41.8362 19.64 41.6499 19.4804L20.4838 19.7105L15.2689 28.449L9.37998 19.4753H6.76235L2.67785 23.5598V44.194ZM43.576 0H40.6547V3.5299H25.8048V6.20775H66.5811V46.3755H25.8048V49.0534H39.9086L31.1604 64.7553L33.4997 66.0587L42.4804 49.9394L51.4611 66.0587L53.8004 64.7553L45.0522 49.0534H69.259V3.5299H43.576V0Z"
+                                        fill="white" />
+                                    <path
+                                        d="M42.9073 17.0568L43.7136 17.6484L44.3052 16.8421L43.4989 16.2506L42.9073 17.0568ZM42.9078 17.0572L43.5011 16.2521L43.4902 16.2443L42.9078 17.0572ZM42.9096 17.0585L43.5031 16.2537L43.5028 16.2535L42.9096 17.0585ZM42.9128 17.0609L43.5088 16.2578L43.5063 16.256L42.9128 17.0609ZM42.9217 17.0675L43.5221 16.2677L43.5176 16.2644L42.9217 17.0675ZM42.9493 17.0882L43.5524 16.2906L43.5497 16.2885L42.9493 17.0882ZM43.0408 17.1586L42.4247 17.9463L42.4247 17.9463L43.0408 17.1586ZM43.346 17.4076L42.6997 18.1706L42.6997 18.1706L43.346 17.4076ZM44.2626 18.2794L44.9949 17.5984L44.9949 17.5984L44.2626 18.2794ZM45.2444 19.589L44.3736 20.0807L44.3736 20.0807L45.2444 19.589ZM45.7667 21.4468L44.7669 21.4289L44.7669 21.4289L45.7667 21.4468ZM45.2073 23.245L44.3468 22.7356L44.3468 22.7357L45.2073 23.245ZM44.2282 24.5054L43.5061 23.8136L43.5061 23.8136L44.2282 24.5054ZM43.3249 25.3411L43.9614 26.1124L43.9614 26.1124L43.3249 25.3411ZM43.0253 25.5792L42.419 24.7839L42.419 24.7839L43.0253 25.5792ZM42.9354 25.6466L43.526 26.4536L43.5288 26.4515L42.9354 25.6466ZM42.9083 25.6665L43.4943 26.4768L43.4989 26.4734L42.9083 25.6665ZM42.8996 25.6728L43.4833 26.4847L43.4856 26.4831L42.8996 25.6728ZM42.8964 25.675L43.4789 26.4879L43.4802 26.487L42.8964 25.675ZM42.8946 25.6763L42.3122 24.8635L42.3087 24.866L42.8946 25.6763ZM42.8941 25.6767L43.4758 26.4901L44.2892 25.9084L43.7076 25.095L42.8941 25.6767ZM42.5448 25.9265V26.9265H42.8656L43.1265 26.7399L42.5448 25.9265ZM23.7355 25.9265V24.9265H22.7355V25.9265H23.7355ZM23.7355 66.6621L24.5357 67.2618L24.7355 66.9952V66.6621H23.7355ZM23.468 67.019L22.8682 67.8192L23.6684 68.419L24.2682 67.6188L23.468 67.019ZM23.4676 67.0195L24.2676 67.6195L24.2707 67.6153L23.4676 67.0195ZM23.4664 67.0212L24.2644 67.6238L24.2664 67.6212L23.4664 67.0212ZM23.4641 67.0242L24.2614 67.6277L24.2621 67.6268L23.4641 67.0242ZM23.4577 67.0326L24.2517 67.6406L24.255 67.6362L23.4577 67.0326ZM23.4375 67.059L24.2293 67.6698L24.2315 67.667L23.4375 67.059ZM23.4024 67.1041L22.6157 66.4867L22.6156 66.4868L23.4024 67.1041ZM23.3684 67.1471L24.151 67.7697L24.1511 67.7695L23.3684 67.1471ZM23.1237 67.4432L22.3639 66.793L22.3639 66.793L23.1237 67.4432ZM22.2675 68.3441L22.9535 69.0717L22.9535 69.0717L22.2675 68.3441ZM20.997 69.3382L21.5222 70.1892L21.5222 70.1892L20.997 69.3382ZM19.2516 69.9818L19.3572 70.9763L19.3572 70.9763L19.2516 69.9818ZM17.1168 69.5697L16.6984 70.478L16.6984 70.478L17.1168 69.5697ZM15.5116 68.558L14.8916 69.3426L14.8916 69.3426L15.5116 68.558ZM14.9891 68.1194L15.6535 67.372L14.9778 66.7712L14.3122 67.3833L14.9891 68.1194ZM14.604 68.4582L15.2474 69.2237L15.2474 69.2237L14.604 68.4582ZM13.1487 69.4562L12.6849 68.5703L12.6849 68.5703L13.1487 69.4562ZM9.2479 69.4562L9.7117 68.5703L9.7117 68.5703L9.2479 69.4562ZM7.79254 68.4582L8.43595 67.6927L8.43594 67.6927L7.79254 68.4582ZM6.79707 67.5184L6.07196 68.207L6.07196 68.207L6.79707 67.5184ZM6.51056 67.2058L5.76022 67.8668L5.76026 67.8669L6.51056 67.2058ZM6.42972 67.1126L5.66696 67.7593L5.66912 67.7619L6.42972 67.1126ZM6.40622 67.0849L5.64001 67.7275L5.64346 67.7316L6.40622 67.0849ZM6.39886 67.0761L5.63099 67.7168L5.63266 67.7188L6.39886 67.0761ZM6.3963 67.0731L5.62773 67.7128L5.62843 67.7137L6.3963 67.0731ZM6.3953 67.0719L7.16388 66.4321L7.16223 66.4302L6.3953 67.0719ZM6.39487 67.0714L5.62101 67.7048L5.62794 67.7131L6.39487 67.0714ZM6.3945 67.0709L5.62488 67.7094L6.26338 68.479L7.033 67.8405L6.3945 67.0709ZM6.08603 66.6991H5.08603V67.0599L5.31641 67.3376L6.08603 66.6991ZM6.08603 47.8456H7.08603V46.0253L5.54969 47.0016L6.08603 47.8456ZM5.91839 47.9476L5.41641 47.0827L5.41639 47.0827L5.91839 47.9476ZM3.85829 48.4354L3.73992 49.4284L3.73993 49.4284L3.85829 48.4354ZM2.17059 47.6911L2.78463 46.9018L2.78463 46.9018L2.17059 47.6911ZM1.09061 46.5958L0.307214 47.2173L0.307214 47.2173L1.09061 46.5958ZM0.414381 45.6255L1.26662 45.1024L1.26662 45.1024L0.414381 45.6255ZM0.227386 45.3076L-0.644754 45.7969L-0.64475 45.7969L0.227386 45.3076ZM0.174929 45.2124L-0.706778 45.6843L-0.705103 45.6874L0.174929 45.2124ZM0.159482 45.1836L-0.724856 45.6505L-0.722219 45.6554L0.159482 45.1836ZM0.154524 45.1742L-0.731251 45.6383L-0.729801 45.6411L0.154524 45.1742ZM0.152745 45.1708L-0.733596 45.6338L-0.733026 45.6349L0.152745 45.1708ZM0.152031 45.1694L-0.734542 45.632L-0.734309 45.6325L0.152031 45.1694ZM0.151719 45.1688L1.03829 44.7062L1.03761 44.7049L0.151719 45.1688ZM0.151436 45.1683L-0.735463 45.6302L-0.273498 46.5171L0.613402 46.0552L0.151436 45.1683ZM0 44.8775H-1V45.1224L-0.886899 45.3395L0 44.8775ZM0 22.4506L-0.707107 21.7435L-1 22.0364V22.4506H0ZM5.65315 16.7975V15.7975H5.23893L4.94604 16.0903L5.65315 16.7975ZM10.8256 16.7975L11.6617 16.2488L11.3655 15.7975H10.8256V16.7975ZM15.1612 23.404L14.3251 23.9527L15.2014 25.288L16.0199 23.9165L15.1612 23.404ZM18.9536 17.0491L18.9428 16.0492L18.3822 16.0553L18.0949 16.5367L18.9536 17.0491ZM42.5473 16.7927L43.1388 15.9864L42.8699 15.7891L42.5364 15.7927L42.5473 16.7927ZM2.69655 44.2246L1.8431 44.7458L1.84431 44.7478L2.69655 44.2246ZM2.67785 44.194H1.67785V44.4752L1.8244 44.7152L2.67785 44.194ZM3.18843 44.9315L3.97183 44.3099L3.97183 44.3099L3.18843 44.9315ZM3.81489 45.5775L3.20085 46.3668L3.20086 46.3668L3.81489 45.5775ZM4.17526 45.7764L4.29372 44.7834L4.29351 44.7834L4.17526 45.7764ZM4.57411 45.6316L4.07212 44.7667L4.07211 44.7667L4.57411 45.6316ZM5.38061 44.9681L4.66379 44.2708L4.66379 44.2708L5.38061 44.9681ZM6.05196 44.1757L6.85319 44.774L6.85514 44.7714L6.05196 44.1757ZM6.08603 44.1297L6.88921 44.7255L7.08603 44.4601V44.1297H6.08603ZM6.08603 28.6043V27.6043H5.08603V28.6043H6.08603ZM8.76388 28.6043H9.76388V27.6043H8.76388V28.6043ZM8.76388 65.7007H7.76388V66.102L8.04129 66.3919L8.76388 65.7007ZM9.51547 66.4082L8.87206 67.1737L8.87207 67.1738L9.51547 66.4082ZM10.4899 67.0838L10.9537 66.1979L10.9537 66.1979L10.4899 67.0838ZM11.9067 67.0838L11.4429 66.1979L11.4429 66.1979L11.9067 67.0838ZM12.8811 66.4082L13.5245 67.1738L13.5245 67.1737L12.8811 66.4082ZM13.6327 65.7007L14.3553 66.3919L14.6327 66.102V65.7007H13.6327ZM13.6327 48.3231V47.3231H12.6327V48.3231H13.6327ZM16.3106 48.3231H17.3106V47.3231H16.3106V48.3231ZM16.3106 65.6852H15.3106V66.0982L15.6019 66.3908L16.3106 65.6852ZM17.1718 66.4569L16.5518 67.2415L16.5518 67.2416L17.1718 66.4569ZM18.237 67.1374L18.6553 66.2291L18.6553 66.2291L18.237 67.1374ZM18.9687 67.319L18.8631 66.3246L18.8631 66.3246L18.9687 67.319ZM19.5904 67.0595L19.0652 66.2086L19.0652 66.2086L19.5904 67.0595ZM20.4304 66.3958L19.7444 65.6682L19.7444 65.6682L20.4304 66.3958ZM21.0577 65.7387L21.814 66.3928L22.0577 66.1111V65.7387H21.0577ZM21.0577 23.2486V22.2486H20.0577V23.2486H21.0577ZM41.6531 23.2486V24.2486H42.0153L42.2934 24.0168L41.6531 23.2486ZM42.2946 22.6528L41.5725 21.961L41.5725 21.961L42.2946 22.6528ZM42.9029 21.881L42.0424 21.3716L42.0424 21.3716L42.9029 21.881ZM43.0893 21.3989L44.0891 21.4168L44.0891 21.4168L43.0893 21.3989ZM42.9126 20.9057L42.0418 21.3974L42.0418 21.3974L42.9126 20.9057ZM42.3017 20.103L43.034 19.422L43.034 19.422L42.3017 20.103ZM41.6499 19.4804L42.3004 18.7209L42.0149 18.4764L41.639 18.4805L41.6499 19.4804ZM20.4838 19.7105L20.473 18.7106L19.9124 18.7167L19.6251 19.1981L20.4838 19.7105ZM15.2689 28.449L14.4329 28.9976L15.3092 30.3329L16.1277 28.9614L15.2689 28.449ZM9.37998 19.4753L10.216 18.9267L9.91983 18.4753H9.37998V19.4753ZM6.76235 19.4753V18.4753H6.34814L6.05524 18.7682L6.76235 19.4753ZM2.67785 23.5598L1.97075 22.8527L1.67785 23.1456V23.5598H2.67785ZM40.6547 0V-1H39.6547V0H40.6547ZM43.576 0H44.576V-1H43.576V0ZM40.6547 3.5299V4.5299H41.6547V3.5299H40.6547ZM25.8048 3.5299V2.5299H24.8048V3.5299H25.8048ZM25.8048 6.20775H24.8048V7.20775H25.8048V6.20775ZM66.5811 6.20775H67.5811V5.20775H66.5811V6.20775ZM66.5811 46.3755V47.3755H67.5811V46.3755H66.5811ZM25.8048 46.3755V45.3755H24.8048V46.3755H25.8048ZM25.8048 49.0534H24.8048V50.0534H25.8048V49.0534ZM39.9086 49.0534L40.7822 49.5401L41.6105 48.0534H39.9086V49.0534ZM31.1604 64.7553L30.2868 64.2686L29.8001 65.1422L30.6737 65.6289L31.1604 64.7553ZM33.4997 66.0587L33.013 66.9322L33.8866 67.4189L34.3733 66.5454L33.4997 66.0587ZM42.4804 49.9394L43.354 49.4527L42.4804 47.8848L41.6069 49.4527L42.4804 49.9394ZM51.4611 66.0587L50.5876 66.5454L51.0743 67.4189L51.9478 66.9322L51.4611 66.0587ZM53.8004 64.7553L54.2871 65.6289L55.1607 65.1422L54.674 64.2686L53.8004 64.7553ZM45.0522 49.0534V48.0534H43.3503L44.1786 49.5401L45.0522 49.0534ZM69.259 49.0534V50.0534H70.259V49.0534H69.259ZM69.259 3.5299H70.259V2.5299H69.259V3.5299ZM43.576 3.5299H42.576V4.5299H43.576V3.5299ZM18.9622 7.54667C18.9622 9.68337 17.23 11.4155 15.0933 11.4155V13.4155C18.3346 13.4155 20.9622 10.7879 20.9622 7.54667H18.9622ZM15.0933 3.67785C17.23 3.67785 18.9622 5.40998 18.9622 7.54667H20.9622C20.9622 4.30541 18.3346 1.67785 15.0933 1.67785V3.67785ZM11.2245 7.54667C11.2245 5.40998 12.9567 3.67785 15.0933 3.67785V1.67785C11.8521 1.67785 9.22453 4.30541 9.22453 7.54667H11.2245ZM15.0933 11.4155C12.9567 11.4155 11.2245 9.68337 11.2245 7.54667H9.22453C9.22453 10.7879 11.8521 13.4155 15.0933 13.4155V11.4155ZM21.64 7.54667C21.64 11.1623 18.709 14.0933 15.0933 14.0933V16.0933C19.8135 16.0933 23.64 12.2669 23.64 7.54667H21.64ZM15.0933 1C18.709 1 21.64 3.93105 21.64 7.54667H23.64C23.64 2.82648 19.8135 -1 15.0933 -1V1ZM8.54667 7.54667C8.54667 3.93105 11.4777 1 15.0933 1V-1C10.3732 -1 6.54667 2.82648 6.54667 7.54667H8.54667ZM15.0933 14.0933C11.4777 14.0933 8.54667 11.1623 8.54667 7.54667H6.54667C6.54667 12.2669 10.3732 16.0933 15.0933 16.0933V14.0933ZM42.9216 18.7279L43.7136 17.6484L42.1011 16.4653L41.309 17.5448L42.9216 18.7279ZM43.4902 16.2443C43.5057 16.2553 43.4055 16.1773 43.2677 16.1242C43.0969 16.0583 42.9112 16.0406 42.7309 16.073C42.4506 16.1234 42.2766 16.2813 42.2611 16.2945C42.2122 16.3359 42.1784 16.373 42.1683 16.384C42.154 16.3997 42.1432 16.4126 42.1379 16.419C42.1272 16.432 42.1191 16.4424 42.1166 16.4455C42.1131 16.4501 42.1103 16.4538 42.1087 16.456C42.1032 16.4632 42.0968 16.4718 42.0911 16.4796C42.0777 16.4977 42.0521 16.5325 42.0026 16.5998C41.9033 16.735 41.705 17.0051 41.309 17.5448L42.9216 18.7279C43.3176 18.1881 43.5155 17.9185 43.6144 17.784C43.664 17.7164 43.688 17.6838 43.6995 17.6683C43.7062 17.6593 43.706 17.6595 43.7037 17.6625C43.7029 17.6636 43.7006 17.6666 43.6976 17.6705C43.6956 17.6731 43.6878 17.6832 43.6773 17.6958C43.6721 17.7021 43.6614 17.7149 43.6471 17.7306C43.6371 17.7415 43.6034 17.7785 43.5545 17.8199C43.5294 17.8413 43.4829 17.8787 43.4189 17.9167C43.3575 17.9532 43.2424 18.0131 43.0848 18.0414C42.9045 18.0738 42.7188 18.0561 42.5479 17.9902C42.4102 17.937 42.31 17.8591 42.3255 17.8701L43.4902 16.2443ZM43.5028 16.2535L43.501 16.2521L42.3147 17.8623L42.3165 17.8636L43.5028 16.2535ZM43.5063 16.256L43.5031 16.2537L42.3162 17.8634L42.3193 17.8657L43.5063 16.256ZM43.5176 16.2644L43.5088 16.2579L42.3168 17.8639L42.3257 17.8705L43.5176 16.2644ZM43.5497 16.2885L43.5221 16.2678L42.3213 17.8671L42.3489 17.8879L43.5497 16.2885ZM43.6569 16.371C43.6144 16.3377 43.5792 16.3108 43.5524 16.2906L42.3461 17.8858C42.3645 17.8997 42.3911 17.9201 42.4247 17.9463L43.6569 16.371ZM43.9924 16.6446C43.8569 16.5298 43.7418 16.4374 43.6569 16.371L42.4247 17.9463C42.4916 17.9987 42.5864 18.0747 42.6997 18.1706L43.9924 16.6446ZM44.9949 17.5984C44.6237 17.1992 44.2598 16.8711 43.9924 16.6446L42.6997 18.1706C42.9257 18.3621 43.2279 18.6351 43.5304 18.9604L44.9949 17.5984ZM46.1152 19.0974C45.7785 18.5011 45.359 17.9899 44.9949 17.5984L43.5304 18.9604C43.8317 19.2845 44.1405 19.6679 44.3736 20.0807L46.1152 19.0974ZM46.7666 21.4646C46.7838 20.4993 46.4423 19.6768 46.1152 19.0974L44.3736 20.0807C44.6054 20.4912 44.7754 20.9537 44.7669 21.4289L46.7666 21.4646ZM46.0678 23.7544C46.3982 23.1964 46.7498 22.4037 46.7666 21.4646L44.7669 21.4289C44.7586 21.892 44.5812 22.3396 44.3468 22.7356L46.0678 23.7544ZM44.9502 25.1973C45.3109 24.8209 45.7275 24.3294 46.0678 23.7544L44.3468 22.7357C44.1109 23.1341 43.8041 23.5027 43.5061 23.8136L44.9502 25.1973ZM43.9614 26.1124C44.2244 25.8954 44.5827 25.5808 44.9503 25.1973L43.5061 23.8136C43.2071 24.1257 42.9102 24.3868 42.6885 24.5697L43.9614 26.1124ZM43.6315 26.3745C43.7149 26.3109 43.8281 26.2224 43.9614 26.1124L42.6885 24.5697C42.5774 24.6614 42.4846 24.7339 42.419 24.7839L43.6315 26.3745ZM43.5288 26.4515C43.555 26.4322 43.5897 26.4064 43.6315 26.3745L42.419 24.7839C42.3863 24.8089 42.3602 24.8283 42.3421 24.8417L43.5288 26.4515ZM43.4989 26.4734L43.526 26.4536L42.3449 24.8396L42.3177 24.8595L43.4989 26.4734ZM43.4856 26.4831L43.4943 26.4767L42.3223 24.8562L42.3135 24.8625L43.4856 26.4831ZM43.4802 26.487L43.4833 26.4847L42.3158 24.8609L42.3127 24.8631L43.4802 26.487ZM43.4771 26.4892L43.4789 26.4879L42.314 24.8622L42.3122 24.8635L43.4771 26.4892ZM41.3019 25.1692C41.6913 25.7138 41.8862 25.9863 41.9839 26.1227C42.0325 26.1905 42.0577 26.2256 42.0708 26.2439C42.0765 26.2518 42.0827 26.2603 42.088 26.2675C42.0896 26.2697 42.0923 26.2734 42.0957 26.2778C42.098 26.2809 42.1058 26.2912 42.1161 26.304C42.1212 26.3103 42.1316 26.3231 42.1454 26.3386C42.1549 26.3495 42.1876 26.3863 42.2349 26.4278C42.2477 26.4391 42.4196 26.6016 42.7 26.6572C42.8827 26.6935 43.0737 26.6783 43.251 26.6107C43.3289 26.581 43.3881 26.5472 43.4252 26.524C43.4392 26.515 43.46 26.5011 43.4669 26.4964C43.4738 26.4916 43.4806 26.4867 43.4806 26.4867L42.3087 24.866C42.3087 24.866 42.3155 24.8611 42.3223 24.8563C42.3292 24.8515 42.35 24.8376 42.3641 24.8287C42.4011 24.8055 42.4604 24.7717 42.5382 24.742C42.7155 24.6744 42.9065 24.6592 43.0892 24.6955C43.248 24.7269 43.3625 24.7898 43.4221 24.8268C43.4848 24.8657 43.5301 24.9035 43.5543 24.9248C43.6015 24.9663 43.6341 25.0031 43.6437 25.0138C43.6574 25.0294 43.6677 25.042 43.6727 25.0482C43.6828 25.0607 43.6903 25.0707 43.6921 25.0731C43.6951 25.077 43.6972 25.0799 43.698 25.081C43.7002 25.084 43.7002 25.0841 43.6937 25.075C43.6824 25.0593 43.6588 25.0264 43.61 24.9582C43.5127 24.8225 43.3182 24.5505 42.9287 24.0059L41.3019 25.1692ZM43.7076 25.095L42.9287 24.0059L41.3019 25.1692L42.0807 26.2584L43.7076 25.095ZM43.1265 26.7399L43.4758 26.4901L42.3125 24.8633L41.9631 25.1131L43.1265 26.7399ZM23.7355 26.9265H42.5448V24.9265H23.7355V26.9265ZM24.7355 66.6621V25.9265H22.7355V66.6621H24.7355ZM24.2682 67.6188L24.5357 67.2618L22.9353 66.0623L22.6678 66.4193L24.2682 67.6188ZM21.7968 67.0162L22.8682 67.8192L24.0677 66.2188L22.9963 65.4158L21.7968 67.0162ZM24.2707 67.6153C24.2588 67.6315 24.344 67.5261 24.4007 67.3792C24.471 67.1968 24.4843 67.0038 24.4483 66.8236C24.3936 66.5502 24.237 66.3806 24.2278 66.3698C24.1885 66.3238 24.1537 66.2918 24.1435 66.2824C24.1288 66.2689 24.1167 66.2587 24.1107 66.2537C24.0987 66.2435 24.0889 66.2358 24.086 66.2336C24.0818 66.2302 24.0783 66.2275 24.0763 66.2259C24.0694 66.2206 24.0611 66.2144 24.0533 66.2085C24.0355 66.195 24.001 66.1691 23.9342 66.119C23.8001 66.0183 23.532 65.8173 22.9963 65.4158L21.7968 67.0162C22.3326 67.4177 22.6001 67.6183 22.7337 67.7186C22.8007 67.7689 22.8332 67.7933 22.8487 67.805C22.8576 67.8117 22.8577 67.8118 22.8549 67.8097C22.8539 67.809 22.8512 67.8068 22.8476 67.804C22.8452 67.8021 22.8359 67.7947 22.824 67.7848C22.8182 67.7799 22.8062 67.7698 22.7916 67.7563C22.7814 67.747 22.7466 67.715 22.7074 67.6691C22.6873 67.6456 22.6513 67.6015 22.6142 67.5407C22.5793 67.4835 22.5181 67.3712 22.487 67.2154C22.451 67.0352 22.4643 66.8421 22.5346 66.6597C22.5912 66.5128 22.6765 66.4075 22.6645 66.4236L24.2707 67.6153ZM24.2672 67.62L24.2676 67.6195L22.6676 66.4195L22.6672 66.42L24.2672 67.62ZM24.2664 67.6212L24.2672 67.62L22.6672 66.42L22.6664 66.4212L24.2664 67.6212ZM24.2621 67.6268L24.2644 67.6238L22.6683 66.4186L22.6661 66.4216L24.2621 67.6268ZM24.255 67.6362L24.2614 67.6277L22.6668 66.4206L22.6604 66.429L24.255 67.6362ZM24.2315 67.667L24.2517 67.6406L22.6638 66.4246L22.6435 66.451L24.2315 67.667ZM24.1891 67.7215C24.2047 67.7015 24.2182 67.6842 24.2293 67.6697L22.6457 66.4483C22.6376 66.4587 22.6276 66.4716 22.6157 66.4867L24.1891 67.7215ZM24.1511 67.7695C24.165 67.7521 24.1777 67.736 24.1892 67.7214L22.6156 66.4868C22.6067 66.4982 22.5967 66.5109 22.5857 66.5248L24.1511 67.7695ZM23.8835 68.0934C23.9958 67.9621 24.0862 67.8512 24.151 67.7697L22.5858 66.5246C22.534 66.5897 22.4589 66.6821 22.3639 66.793L23.8835 68.0934ZM22.9535 69.0717C23.3415 68.7059 23.6614 68.353 23.8835 68.0933L22.3639 66.793C22.1744 67.0145 21.9041 67.3123 21.5815 67.6165L22.9535 69.0717ZM21.5222 70.1892C22.0833 69.8429 22.5713 69.4321 22.9535 69.0717L21.5815 67.6165C21.2597 67.9199 20.8802 68.2351 20.4717 68.4873L21.5222 70.1892ZM19.3572 70.9763C20.2326 70.8833 20.978 70.5251 21.5222 70.1892L20.4717 68.4873C20.0658 68.7378 19.6124 68.9379 19.1459 68.9874L19.3572 70.9763ZM16.6984 70.478C17.3823 70.793 18.3151 71.0869 19.3572 70.9763L19.1459 68.9874C18.5965 69.0458 18.0409 68.8944 17.5351 68.6614L16.6984 70.478ZM14.8916 69.3426C15.3772 69.7263 15.997 70.155 16.6984 70.478L17.5351 68.6614C17.0269 68.4274 16.5445 68.0997 16.1315 67.7734L14.8916 69.3426ZM14.3247 68.8667C14.4972 69.0201 14.6872 69.1812 14.8916 69.3426L16.1315 67.7734C15.9613 67.6389 15.801 67.5031 15.6535 67.372L14.3247 68.8667ZM15.2474 69.2237C15.396 69.0989 15.536 68.975 15.666 68.8555L14.3122 67.3833C14.2019 67.4847 14.0843 67.5888 13.9606 67.6927L15.2474 69.2237ZM13.6125 70.3422C14.2479 70.0095 14.8074 69.5936 15.2474 69.2237L13.9606 67.6927C13.5873 68.0064 13.1498 68.3269 12.6849 68.5703L13.6125 70.3422ZM11.1983 70.9893C12.1559 70.9893 12.9946 70.6656 13.6125 70.3422L12.6849 68.5703C12.2226 68.8123 11.7119 68.9893 11.1983 68.9893V70.9893ZM8.78409 70.3422C9.40196 70.6656 10.2407 70.9893 11.1983 70.9893V68.9893C10.6847 68.9893 10.174 68.8123 9.7117 68.5703L8.78409 70.3422ZM7.14914 69.2237C7.58918 69.5936 8.14867 70.0095 8.78409 70.3422L9.7117 68.5703C9.24679 68.3269 8.80925 68.0064 8.43595 67.6927L7.14914 69.2237ZM6.07196 68.207C6.33062 68.4794 6.70235 68.8482 7.14915 69.2237L8.43594 67.6927C8.06159 67.378 7.74498 67.0644 7.52217 66.8298L6.07196 68.207ZM5.76026 67.8669C5.83577 67.9526 5.94121 68.0694 6.07196 68.207L7.52218 66.8298C7.41056 66.7122 7.32196 66.614 7.26086 66.5447L5.76026 67.8669ZM5.66912 67.7619C5.69187 67.7885 5.72242 67.8239 5.76022 67.8668L7.2609 66.5447C7.2303 66.51 7.20658 66.4825 7.19032 66.4634L5.66912 67.7619ZM5.64346 67.7316L5.66697 67.7593L7.19248 66.466L7.16897 66.4382L5.64346 67.7316ZM5.63266 67.7188L5.64002 67.7275L7.17241 66.4423L7.16505 66.4335L5.63266 67.7188ZM5.62843 67.7137L5.63099 67.7168L7.16673 66.4355L7.16417 66.4325L5.62843 67.7137ZM5.62673 67.7116L5.62773 67.7128L7.16487 66.4333L7.16387 66.4321L5.62673 67.7116ZM5.62794 67.7131L5.62837 67.7136L7.16223 66.4302L7.1618 66.4296L5.62794 67.7131ZM6.78644 65.4464C6.27125 65.8738 6.01343 66.0878 5.8844 66.195C5.82017 66.2484 5.787 66.276 5.76975 66.2904C5.76227 66.2966 5.75419 66.3034 5.74744 66.3091C5.74543 66.3109 5.74194 66.3139 5.73775 66.3175C5.73487 66.32 5.72517 66.3285 5.71322 66.3396C5.70732 66.3451 5.69538 66.3564 5.68088 66.3712C5.67077 66.3815 5.63655 66.4165 5.59872 66.4663C5.58812 66.4802 5.44008 66.6611 5.40334 66.9415C5.37945 67.1239 5.40606 67.3119 5.48387 67.4838C5.54653 67.6222 5.6334 67.7199 5.62106 67.7048L7.16869 66.438C7.15635 66.4229 7.24321 66.5205 7.30588 66.659C7.38368 66.8308 7.41029 67.0189 7.3864 67.2013C7.36561 67.3599 7.31145 67.4772 7.27892 67.5388C7.24474 67.6034 7.21047 67.6509 7.19106 67.6764C7.15325 67.7261 7.11908 67.7611 7.10902 67.7713C7.09459 67.786 7.08274 67.7972 7.07696 67.8026C7.06525 67.8135 7.05591 67.8217 7.05359 67.8237C7.04995 67.8269 7.04721 67.8292 7.04619 67.8301C7.04341 67.8325 7.04334 67.8325 7.05192 67.8253C7.06678 67.8129 7.09793 67.787 7.16244 67.7334C7.29088 67.6267 7.5482 67.4131 8.06346 66.9856L6.78644 65.4464ZM7.033 67.8405L8.06346 66.9856L6.78644 65.4464L5.75599 66.3013L7.033 67.8405ZM5.31641 67.3376L5.62488 67.7094L7.16411 66.4324L6.85565 66.0606L5.31641 67.3376ZM5.08603 47.8456V66.6991H7.08603V47.8456H5.08603ZM6.42037 48.8124C6.48912 48.7725 6.55646 48.7315 6.62237 48.6896L5.54969 47.0016C5.50544 47.0298 5.461 47.0568 5.41641 47.0827L6.42037 48.8124ZM3.73993 49.4284C4.84457 49.56 5.78367 49.182 6.42039 48.8124L5.41639 47.0827C4.98388 47.3337 4.48925 47.5035 3.97666 47.4424L3.73993 49.4284ZM1.55656 48.4803C2.05784 48.8703 2.80039 49.3164 3.73992 49.4284L3.97667 47.4424C3.53382 47.3896 3.1297 47.1702 2.78463 46.9018L1.55656 48.4803ZM0.307214 47.2173C0.619744 47.6113 1.04014 48.0786 1.55656 48.4804L2.78463 46.9018C2.43753 46.6318 2.12873 46.2954 1.87401 45.9743L0.307214 47.2173ZM-0.437861 46.1487C-0.265543 46.4294 -0.0120074 46.815 0.307214 47.2173L1.87401 45.9743C1.61823 45.6519 1.41035 45.3365 1.26662 45.1024L-0.437861 46.1487ZM-0.64475 45.7969C-0.594904 45.8858 -0.525263 46.0063 -0.437856 46.1487L1.26662 45.1024C1.19457 44.985 1.13819 44.8873 1.09952 44.8184L-0.64475 45.7969ZM-0.705103 45.6874C-0.68994 45.7155 -0.669738 45.7524 -0.644754 45.7969L1.09953 44.8184C1.08018 44.7839 1.06524 44.7566 1.05496 44.7375L-0.705103 45.6874ZM-0.722219 45.6554L-0.706773 45.6842L1.05663 44.7406L1.04118 44.7118L-0.722219 45.6554ZM-0.729801 45.6411L-0.724843 45.6504L1.04381 44.7167L1.03885 44.7073L-0.729801 45.6411ZM-0.733026 45.6349L-0.731247 45.6383L1.04029 44.7101L1.03852 44.7067L-0.733026 45.6349ZM-0.734309 45.6325L-0.733595 45.6338L1.03909 44.7078L1.03837 44.7064L-0.734309 45.6325ZM-0.734854 45.6314L-0.734542 45.632L1.0386 44.7068L1.03829 44.7062L-0.734854 45.6314ZM0.87696 43.6628C0.283256 43.9721 -0.0138775 44.1269 -0.16261 44.2045C-0.23664 44.2432 -0.274911 44.2632 -0.29484 44.2737C-0.303458 44.2782 -0.312865 44.2831 -0.320787 44.2874C-0.323144 44.2887 -0.327248 44.2909 -0.332193 44.2936C-0.335587 44.2955 -0.347038 44.3019 -0.361293 44.3104C-0.368335 44.3146 -0.382599 44.3232 -0.400155 44.3349C-0.412402 44.343 -0.453878 44.3705 -0.502004 44.4121C-0.515942 44.4241 -0.700727 44.5726 -0.793938 44.8436C-0.854341 45.0193 -0.86483 45.209 -0.823217 45.3913C-0.804928 45.4715 -0.780192 45.5341 -0.762772 45.5734C-0.755996 45.5884 -0.745365 45.6107 -0.741695 45.6181C-0.737963 45.6254 -0.73417 45.6327 -0.734169 45.6327L1.03761 44.7049C1.03761 44.7049 1.0414 44.7122 1.04513 44.7196C1.0488 44.727 1.05943 44.7492 1.06621 44.7642C1.08363 44.8036 1.10836 44.8662 1.12665 44.9463C1.16826 45.1287 1.15777 45.3183 1.09737 45.494C1.04475 45.647 0.966995 45.7522 0.921692 45.8069C0.874256 45.8641 0.830198 45.9041 0.805488 45.9255C0.757393 45.967 0.715968 45.9945 0.703797 46.0026C0.686318 46.0142 0.672159 46.0227 0.665257 46.0268C0.651284 46.0352 0.640258 46.0413 0.637507 46.0428C0.633206 46.0452 0.629963 46.047 0.628757 46.0476C0.625439 46.0494 0.625274 46.0495 0.635177 46.0443C0.652291 46.0353 0.688176 46.0165 0.76253 45.9777C0.910564 45.9005 1.20711 45.7459 1.80089 45.4366L0.87696 43.6628ZM0.613402 46.0552L1.80089 45.4366L0.87696 43.6628L-0.31053 44.2814L0.613402 46.0552ZM-0.886899 45.3395L-0.735463 45.6302L1.03833 44.7063L0.886899 44.4156L-0.886899 45.3395ZM-1 22.4506V44.8775H1V22.4506H-1ZM4.94604 16.0903L-0.707107 21.7435L0.707107 23.1577L6.36025 17.5046L4.94604 16.0903ZM10.8256 15.7975H5.65315V17.7975H10.8256V15.7975ZM15.9972 22.8554L11.6617 16.2488L9.98958 17.3461L14.3251 23.9527L15.9972 22.8554ZM18.0949 16.5367L14.3025 22.8916L16.0199 23.9165L19.8123 17.5616L18.0949 16.5367ZM42.5364 15.7927L18.9428 16.0492L18.9645 18.0491L42.5582 17.7926L42.5364 15.7927ZM43.4989 16.2506L43.1388 15.9864L41.9558 17.599L42.3158 17.8631L43.4989 16.2506ZM3.55 43.7034L3.5313 43.6728L1.8244 44.7152L1.8431 44.7458L3.55 43.7034ZM3.97183 44.3099C3.80105 44.0947 3.65429 43.8733 3.54879 43.7015L1.84431 44.7478C1.97836 44.9661 2.17077 45.2577 2.40503 45.553L3.97183 44.3099ZM4.42892 44.7882C4.3088 44.6948 4.14948 44.5339 3.97183 44.3099L2.40503 45.553C2.64016 45.8494 2.91113 46.1414 3.20085 46.3668L4.42892 44.7882ZM4.29351 44.7834C4.33328 44.7881 4.36454 44.7944 4.38491 44.7991C4.40703 44.8042 4.4254 44.8095 4.43983 44.814C4.46872 44.8232 4.48698 44.8313 4.49444 44.8349C4.50929 44.8419 4.48724 44.8336 4.42892 44.7882L3.20086 46.3668C3.49352 46.5945 3.78291 46.7367 4.05701 46.7693L4.29351 44.7834ZM4.07211 44.7667C4.0032 44.8067 3.98842 44.8052 4.02246 44.796C4.03983 44.7913 4.07045 44.7844 4.11311 44.7803C4.15102 44.7767 4.21331 44.7738 4.29372 44.7834L4.05681 46.7693C4.36676 46.8063 4.71025 46.7088 5.07612 46.4964L4.07211 44.7667ZM4.66379 44.2708C4.42181 44.5196 4.21577 44.6833 4.07212 44.7667L5.07611 46.4964C5.43651 46.2872 5.78654 45.9849 6.09743 45.6653L4.66379 44.2708ZM5.25073 43.5773C5.10022 43.7788 4.89514 44.033 4.66379 44.2708L6.09742 45.6653C6.40696 45.3471 6.66854 45.0213 6.85319 44.774L5.25073 43.5773ZM5.28285 43.534L5.24878 43.5799L6.85514 44.7714L6.88921 44.7255L5.28285 43.534ZM5.08603 28.6043V44.1297H7.08603V28.6043H5.08603ZM8.76388 27.6043H6.08603V29.6043H8.76388V27.6043ZM9.76388 65.7007V28.6043H7.76388V65.7007H9.76388ZM10.1589 65.6427C9.89351 65.4197 9.65961 65.1904 9.48647 65.0094L8.04129 66.3919C8.24978 66.6099 8.53706 66.8922 8.87206 67.1737L10.1589 65.6427ZM10.9537 66.1979C10.7173 66.0741 10.4431 65.8816 10.1589 65.6427L8.87207 67.1738C9.22277 67.4685 9.61899 67.7566 10.0261 67.9698L10.9537 66.1979ZM11.1983 66.3115C11.2479 66.3115 11.2521 66.3196 11.2015 66.3045C11.1546 66.2906 11.0724 66.26 10.9537 66.1979L10.0261 67.9698C10.4357 68.1842 10.8351 68.3115 11.1983 68.3115V66.3115ZM11.4429 66.1979C11.3242 66.26 11.242 66.2906 11.1951 66.3045C11.1445 66.3196 11.1487 66.3115 11.1983 66.3115V68.3115C11.5614 68.3115 11.9609 68.1842 12.3705 67.9698L11.4429 66.1979ZM12.2377 65.6427C11.9535 65.8816 11.6793 66.0741 11.4429 66.1979L12.3705 67.9698C12.7776 67.7566 13.1738 67.4685 13.5245 67.1738L12.2377 65.6427ZM12.9101 65.0094C12.737 65.1904 12.5031 65.4197 12.2377 65.6427L13.5245 67.1737C13.8595 66.8922 14.1468 66.6099 14.3553 66.3919L12.9101 65.0094ZM12.6327 48.3231V65.7007H14.6327V48.3231H12.6327ZM16.3106 47.3231H13.6327V49.3231H16.3106V47.3231ZM17.3106 65.6852V48.3231H15.3106V65.6852H17.3106ZM17.7918 65.6723C17.4865 65.4312 17.2163 65.1776 17.0192 64.9796L15.6019 66.3908C15.8373 66.6272 16.1675 66.9379 16.5518 67.2415L17.7918 65.6723ZM18.6553 66.2291C18.406 66.1143 18.1079 65.9221 17.7917 65.6723L16.5518 67.2416C16.9402 67.5484 17.3759 67.8419 17.8187 68.0457L18.6553 66.2291ZM18.8631 66.3246C18.9263 66.3178 18.9432 66.328 18.9 66.3185C18.8603 66.3097 18.7798 66.2865 18.6553 66.2291L17.8186 68.0457C18.2643 68.251 18.692 68.354 19.0743 68.3134L18.8631 66.3246ZM19.0652 66.2086C18.9625 66.2719 18.891 66.3051 18.8507 66.321C18.8062 66.3385 18.8126 66.3299 18.8631 66.3246L19.0743 68.3134C19.4022 68.2786 19.7567 68.132 20.1157 67.9105L19.0652 66.2086ZM19.7444 65.6682C19.5034 65.8954 19.2691 66.0826 19.0652 66.2086L20.1157 67.9105C20.4724 67.6903 20.8152 67.4074 21.1164 67.1233L19.7444 65.6682ZM20.3013 65.0846C20.1575 65.2508 19.9645 65.4606 19.7444 65.6682L21.1164 67.1233C21.3981 66.8577 21.6384 66.5959 21.814 66.3928L20.3013 65.0846ZM20.0577 23.2486V65.7387H22.0577V23.2486H20.0577ZM41.6531 22.2486H21.0577V24.2486H41.6531V22.2486ZM41.5725 21.961C41.3773 22.1648 41.1752 22.3452 41.0128 22.4805L42.2934 24.0168C42.496 23.8479 42.7564 23.6163 43.0167 23.3447L41.5725 21.961ZM42.0424 21.3716C41.9466 21.5334 41.7868 21.7374 41.5725 21.961L43.0167 23.3447C43.2933 23.0559 43.563 22.7289 43.7634 22.3904L42.0424 21.3716ZM42.0895 21.381C42.09 21.3527 42.0919 21.3295 42.0939 21.3124C42.0959 21.2949 42.0983 21.281 42.1003 21.271C42.1042 21.251 42.1075 21.242 42.1066 21.2444C42.1049 21.2496 42.0898 21.2915 42.0424 21.3716L43.7634 22.3904C43.9655 22.049 44.0837 21.7185 44.0891 21.4168L42.0895 21.381ZM42.0418 21.3974C42.0883 21.4798 42.1021 21.5218 42.1032 21.5254C42.1037 21.5271 42.1004 21.5169 42.0969 21.4955C42.0951 21.4847 42.0931 21.4701 42.0916 21.4519C42.0901 21.434 42.0889 21.4101 42.0895 21.3811L44.0891 21.4168C44.0946 21.108 43.983 20.7676 43.7833 20.414L42.0418 21.3974ZM41.5694 20.784C41.7872 21.0181 41.9475 21.2304 42.0418 21.3974L43.7833 20.414C43.5854 20.0634 43.3141 19.7232 43.034 19.422L41.5694 20.784ZM40.9994 20.24C41.1657 20.3824 41.3716 20.5713 41.5694 20.784L43.034 19.422C42.7712 19.1394 42.5068 18.8977 42.3004 18.7209L40.9994 20.24ZM20.4947 20.7105L41.6608 20.4804L41.639 18.4805L20.473 18.7106L20.4947 20.7105ZM16.1277 28.9614L21.3425 20.223L19.6251 19.1981L14.4102 27.9365L16.1277 28.9614ZM8.54393 20.024L14.4329 28.9976L16.105 27.9003L10.216 18.9267L8.54393 20.024ZM6.76235 20.4753H9.37998V18.4753H6.76235V20.4753ZM3.38496 24.2669L7.46946 20.1824L6.05524 18.7682L1.97075 22.8527L3.38496 24.2669ZM3.67785 44.194V23.5598H1.67785V44.194H3.67785ZM40.6547 1H43.576V-1H40.6547V1ZM41.6547 3.5299V0H39.6547V3.5299H41.6547ZM25.8048 4.5299H40.6547V2.5299H25.8048V4.5299ZM26.8048 6.20775V3.5299H24.8048V6.20775H26.8048ZM66.5811 5.20775H25.8048V7.20775H66.5811V5.20775ZM67.5811 46.3755V6.20775H65.5811V46.3755H67.5811ZM25.8048 47.3755H66.5811V45.3755H25.8048V47.3755ZM26.8048 49.0534V46.3755H24.8048V49.0534H26.8048ZM39.9086 48.0534H25.8048V50.0534H39.9086V48.0534ZM32.034 65.242L40.7822 49.5401L39.0351 48.5667L30.2868 64.2686L32.034 65.242ZM33.9864 65.1851L31.6471 63.8818L30.6737 65.6289L33.013 66.9322L33.9864 65.1851ZM41.6069 49.4527L32.6261 65.572L34.3733 66.5454L43.354 50.4261L41.6069 49.4527ZM52.3347 65.572L43.354 49.4527L41.6069 50.4261L50.5876 66.5454L52.3347 65.572ZM53.3137 63.8818L50.9744 65.1851L51.9478 66.9322L54.2871 65.6289L53.3137 63.8818ZM44.1786 49.5401L52.9269 65.242L54.674 64.2686L45.9258 48.5667L44.1786 49.5401ZM69.259 48.0534H45.0522V50.0534H69.259V48.0534ZM68.259 3.5299V49.0534H70.259V3.5299H68.259ZM43.576 4.5299H69.259V2.5299H43.576V4.5299ZM42.576 0V3.5299H44.576V0H42.576Z"
+                                        fill="white" mask="url(#path-1-inside-1_801_280)" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Предоставляем возможность обучения у специалистов, имеющих многолетний опыт
+                                    терапевтической работы и преподавания.</h4>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="pb-6 pt-8 lg:pt-14 bg-[#2B5F93]">
+            <div class="container">
+                <div class="flex gap-y-8 lg:gap-y-0 flex-col lg:flex-row justify-between">
+                    <ul class="flex flex-wrap justify-between lg:block text-[#F8FBFF] font-light text-xs">
+                        <li class="w-full">
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                ОБУЧЕНИЕ
+                            </p>
+                        </li>
+                        <li class="flex gap-y-3.5 flex-col mt-4">
+                            <a href="/">Терапия Идентичности</a>
+                            <a href="/">Системные семейные расстановки</a>
+                            <a href="/">Тематические семинары</a>
+                            <a href="/">Вебинары</a>
+                            <a href="/">Расписание</a>
+                        </li>
+                    </ul>
+                    <ul class="text-[#F8FBFF] font-light text-xs">
+                        <li>
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                ПСИХОЛОГИЧЕСКАЯ ПОМОЩЬ
+                            </p>
+                        </li>
+                        <li class="flex flex-col gap-y-3.5 mt-4">
+                            <a href="/">Групповые программы</a>
+                            <a href="/">Индивидуальные консультации</a>
+                            <a href="/">Программы в других городах</a>
+                            <a href="/">Онлайн консультации</a>
+                        </li>
+
+                    </ul>
+                    <ul class="flex flex-wrap justify-between lg:block text-[#F8FBFF] font-light text-xs">
+                        <li class="w-full">
+                            <p class="font-bold uppercase text-sm tracking-[1px]">
+                                КОНТАКТЫ
+                            </p>
+                        </li>
+                        <li class="flex flex-col gap-y-3.5 mt-4">
+                            <a href="tel:78123132151">
+                                +7 (812) 313-21-51
+                            </a>
+                            <a href="tel:79522000007">
+                                +7 (952) 200-00-07
+                            </a>
+                            <a href="mailto:istok_spb@mail.ru">
+                                istok_spb@mail.ru
+                            </a>
+                            <p>
+                                Санкт-Петербург, Лермонтовский проспект 12-2
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="text-[#F8FBFF]">
+                        <p class="font-bold uppercase text-sm tracking-[1px]">
+                            Материалы для психологов
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex gap-x-2.5">
+                                <input class="outline-0 rounded-none border-none text-base px-5 py-2.5 text-[#3e3e3e]"
+                                    placeholder="Бесплатно на e-mail" />
+                                <button class="border border-white px-3 hover:opacity-90 transition-opacity">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 17.8436L20 9.28363L0 0.723633V7.36363L14.32 9.28363L0 11.2036V17.8436Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="font-light color-white text-xs mt-4">
+                                Нажимая на кнопку, вы соглашаетесь
+                                <br />
+                                с политикой обработки персональных данных.
+                            </p>
+                        </div>
+                        <div class="mt-7">
+                            <div class="flex items-center gap-x-4 lg:gap-x-2.5">
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[34px] h-[21px] lg:w-[21px] lg:h-[14px]" viewBox="0 0 21 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.4378 13.7619C4.2629 13.7619 0.170518 8.84308 0 0.658203H3.594C3.71205 6.6657 6.36157 9.21035 8.46027 9.73503V0.658203H11.8446V5.83933C13.917 5.61635 16.0941 3.25533 16.8286 0.658203H20.2129C19.6489 3.8587 17.2878 6.21973 15.6089 7.19038C17.2878 7.97738 19.9769 10.0367 21 13.7619H17.2747C16.4746 11.2697 14.481 9.34153 11.8446 9.0792V13.7619H11.4378Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[30px] h-[25px] lg:w-[21px] lg:h-[18px]" viewBox="0 0 21 18"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.7949 1.05535C18.7949 1.05535 20.6451 0.3339 20.4909 2.08595C20.4395 2.8074 19.977 5.3324 19.6172 8.06355L18.3838 16.1539C18.3838 16.1539 18.281 17.3391 17.3559 17.5452C16.4308 17.7513 15.0432 16.8238 14.7862 16.6176C14.5807 16.4631 10.9318 14.1441 9.64695 13.0105C9.2872 12.7013 8.87605 12.0829 9.69835 11.3615L15.0946 6.20845C15.7113 5.59005 16.328 4.1472 13.7584 5.89925L6.56337 10.7947C6.56337 10.7947 5.7411 11.31 4.19932 10.8462L0.858774 9.81557C0.858774 9.81557 -0.374663 9.04263 1.73245 8.26963C6.87177 5.84768 13.1931 3.3742 18.7949 1.05535Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                                <a href="/" class="hover:opacity-90 transition-opacity">
+                                    <svg class="w-[28px] h-[28px] lg:w-[21px] lg:h-[21px]" viewBox="0 0 21 21"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.542 0.158203C13.206 0.159203 15.7064 1.19625 17.5865 3.07868C19.4669 4.96105 20.5016 7.46283 20.5 10.1241C20.4977 15.6145 16.0301 20.0821 10.5417 20.0821H10.5377C8.8713 20.0814 7.23345 19.6634 5.77905 18.8699L0.5 20.2545L1.9129 15.0941C1.04162 13.5843 0.583075 11.871 0.583725 10.1158C0.58575 4.6251 5.05335 0.158203 10.542 0.158203ZM13.3844 11.349C13.6127 11.4321 14.8358 12.0338 15.0847 12.1584C15.1328 12.1825 15.1778 12.2043 15.2196 12.2245C15.3938 12.3087 15.5114 12.3656 15.5616 12.4495C15.6237 12.5532 15.6237 13.0516 15.4163 13.6328C15.209 14.2139 14.2151 14.7443 13.7369 14.8157C13.308 14.8798 12.7657 14.9064 12.1695 14.717C11.8081 14.6024 11.3449 14.4495 10.751 14.193C8.41745 13.1853 6.8407 10.9232 6.54368 10.4971C6.52298 10.4674 6.50853 10.4467 6.50043 10.4359L6.49953 10.4346C6.3715 10.2643 5.4843 9.08375 5.4843 7.86193C5.4843 6.71633 6.04682 6.11578 6.3061 5.839C6.32402 5.81988 6.34047 5.80228 6.3552 5.78615C6.58352 5.53693 6.853 5.4748 7.01877 5.4748C7.18463 5.4748 7.35073 5.47613 7.49565 5.48345C7.51353 5.48435 7.53215 5.4842 7.5514 5.48413C7.6965 5.48323 7.87717 5.48213 8.05552 5.91043C8.1244 6.07588 8.2253 6.32145 8.33162 6.58025C8.54545 7.10075 8.78127 7.6747 8.8228 7.75795C8.88492 7.88255 8.92645 8.02775 8.8434 8.19388C8.83075 8.2191 8.81907 8.24288 8.80795 8.26558C8.74578 8.3923 8.69987 8.4858 8.5945 8.60893C8.55312 8.65728 8.51033 8.70933 8.46758 8.76148C8.38182 8.86593 8.29605 8.9704 8.22132 9.04488C8.09675 9.16883 7.96715 9.3034 8.11232 9.55263C8.25757 9.80148 8.757 10.6163 9.49667 11.2762C10.2915 11.9855 10.9825 12.2852 11.3329 12.4371C11.4014 12.4669 11.457 12.4909 11.4977 12.5113C11.7462 12.6359 11.8914 12.6153 12.0366 12.4491C12.1818 12.283 12.6587 11.7228 12.8245 11.4736C12.9903 11.2244 13.1565 11.2659 13.3844 11.349Z"
+                                            fill="#F8FBFF" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="/"
+                                class="font-light color-white text-xs hover:opacity-90 transition-opacity">Политика
+                                конфиденциальности</a>
+                        </div>
+                        <div class="mt-2.5">
+                            <div class="flex gap-x-2.5 items-center">
+                                <img class="w-12 h-full" src="./images/flag.png" alt="flag">
+                                <img class="w-12 h-full" src="./images/flag1.png" alt="glag2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-start text-xs font-light text-[#F8FBFF] mt-10">
+                    <p>
+                        Информация на данном сайте не является публичной офертой.
+                        <br />
+                        При копировании любой информации ссылка на сайт обязательна.
+                    </p>
+                    <p class="text-[10px] lg:text-xs">© 2023 Санкт-Петербургский институт системной травматерапии</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
